@@ -1,0 +1,19 @@
+body {
+    height: auto;
+    padding: 0em 2em;
+    margin: 1em;
+    font-size: 1em;
+    font-family:"Calibri","Arial",sans-serif;
+    border-top: 8px solid #aaa;
+    border-bottom: 8px solid #aaa;
+}
+
+body::before {
+    content: "Xi Docs, © Rappsilber Lab 2017";
+    float: right;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+}
+
