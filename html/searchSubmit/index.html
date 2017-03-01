@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+@import url("../../docs.css");
+</style>
+</head>
+<body>
+<h2>Xi Search Submission Page</h2>
+<p>The Xi Search Submission Page is the mechanism through which new searches are specified and passed to Xi. The page is broken into 3 logical steps (and the final Submit action). The sections below describe what each step does and how to complete it.</p>
+<h3>1. Choose Acquisitions</h3>
+<p>Acquisitions may be included in a new search in two ways.</p>
+<ol>
+<li>Construct a new acquisition to be uploaded to the Xi Database and then used in a search.</li>
+<li>Choose from a list of previously uploaded acquisitions. Depending on your profile rights, you may see only your own previous acquisitions or those uploaded by other users too.</li>
+</ol>
+<h4>Upload New Acquisition</h4>
+<p>Open the accordion section labelled <em>Upload New Acquisition</em>. A small form will appear. Three actions need to be completed before the upload is ready to start.</p>
+<ol>
+<li>Pick and enter a name for the acquisition you are uploading. Choose something that's descriptive of the data you are going to upload.</li>
+<li>Press the <em>Add Files</em> button to open a file dialog to choose one or more files to be parcelled up into this acquisition. Xi currently supports .mgf, .msm, .apl and .zip files and so you are limited to selecting these types of file. Once you have chosen your files they will be listed below the form.</li>
+<li>Decide whether you wish this upload to be private to yourself by ticking the <em>Set Upload To Private</em> checkbox.</li>
+</ol>
+<p>Once steps 1 and 2 have been completed to the form's satisfaction the <em>Start Upload</em> button will be enabled. Press this to start the upload. Progress bars will then show the upload completing, and upon completion, the files will be relisted as &quot;Uploaded&quot;. A text box will also appear under the <em>Choose Acquisitions</em> label to indicate this upload has been automatically added to the current set of chosen acquisitions. The close button in the text box will uninclude it.</p>
+<h4>Choose Previous Acquisitions</h4>
+<p>Open the accordion section labelled <em>Choose Previous Acquisitions</em>. This, with restrictions according to your user profile, reveals a paged table of previous acquisition uploads to choose from.</p>
+<p>The table is sorted by <em>Id</em> by default, which produces an identical ordering to sorting the table by <em>Date</em>. The table can also be sorted by other metadata: <em>Name</em>, <em>User</em>, <em>Files</em>, or <em>#</em> (File Count); and pages can be navigated using the <em>Previous ... Next</em> controls in the bottom-right corner. However, the most useful tool for finding acquisitions is the <em>Find</em> input box in the top-right corner. This will accept multiple partial strings to match acquisition metadata against and shrink the table to those that match.</p>
+<p>Tick the checkboxes in the <em>Choose</em> column to choose one or more acquisitions. Choices made here will be added to the collection of text boxes under the <em>Choose Acquisitions</em> label. Untick the checkboxes in the <em>Choose</em> column or press the close icons in the textboxes to undo a choice.</p>
+<h3>2. Choose Sequences</h3>
+<p>The <em>Choose Sequences</em> step is equivalent to the <em>Choose Acquisitions</em> step except for these differences:</p>
+<ol>
+<li>Only one file can be associated with a new sequence upload.</li>
+<li>Sequence uploading accepts .fasta or .txt files.</li>
+<li>The table in <em>Choose Previous Sequences</em> lacks a File Count column as the count is necessarily always 1.</li>
+</ol>
+<h3>3. Set Search Parameters</h3>
+<p>This step involves setting the following parameters for the new search:</p>
+<ul>
+<li>Name (optional)</li>
+<li>Cross-Linker</li>
+<li>Enzyme</li>
+<li>Ms Tolerance</li>
+<li>Ms2 Tolerance</li>
+<li>Missed Cleavages</li>
+<li>Fixed Modifications</li>
+<li>Variable Modifications</li>
+<li>Ions</li>
+<li>Losses</li>
+<li>Search Notes (optional)</li>
+</ul>
+<p><em>Name</em> is used in the search listings in the <a href="../history/history.html">Xi Search History</a> page. Choose a name that reflects the search, otherwise it will default to concatenating all the chosen acqusition names along with a timestamp.</p>
+<p><em>Cross-Linker</em> and <em>Enzyme</em> are single choices and the drop-down menu for both reflects that. Use the radio buttons within each respective drop-down to make your choice.</p>
+<p><em>Ms Tolerance</em> and <em>Ms2 Tolerance</em> are numeric inputs and also have a choice of units (parts per million or Daltons).</p>
+<p><em>Missed cleavages</em> is a numeric input with no units.</p>
+<p><em>Fixed Modifications</em>, <em>Variable Modifications</em>, <em>Ions</em> and <em>Losses</em> are all parameters for which multiple choices can be made. Select as many options as the search requires using the checkboxes in each parameters' drop-down menu. <em>Ions</em> has the extra restriction that at least one of the options must be chosen.</p>
+<p><em>Search Notes</em> can be used to add more information about the search, useful as a memory aid for later. The <em>Custom Settings</em> textbox is really only used by the Xi Database Admin to set custom flags to a search, and not intended for general use.</p>
+<p>To reduce user input fatigue a set of sensible defaults are displayed, so you only need to change the ones that are unsuitable for your new search. These defaults can be restored using the <em>Use Default Parameters</em> button. The parameters from your last search can be reapplied using the <em>Use Your Last Search Params</em> button.</p>
+<h3>4. Submit</h3>
+<p>If the previous steps have been completed, then the <em>Submit New Search</em> button will be enabled and the neighbouring warning message will have changed from red to green. If there are still uncompleted parts of the page the warning message will still be red and list the missing information types.</p>
+<p>Choose whether you wish the search to be private using the <em>Set Search As Private?</em> checkbox. This acts in a similar manner to the private acquisition and sequence upload options, in that a private search will only be visible to you and Xi administrators.</p>
+<p>Once happy with the choices made on the page, press <em>Submit New Search</em> to register and start the search on the Xi Search Engine. You'll then be directed to the <a href="../history/history.html">Xi Search History</a> page where its progress can be monitored, or another new search begun.</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
