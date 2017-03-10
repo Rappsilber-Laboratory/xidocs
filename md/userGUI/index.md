@@ -14,6 +14,7 @@ Forgotten passwords can be reset by selecting *Click Here* next to the 'Forgotte
 
 This process may seem convoluted but it ensures only the owner of the account's registered email (i.e. you) can set a new password. Also, until the password reset is performed, the old password remains in force, so no-one can disable your account by typing in your username/email and requesting new passwords.
 
+<a name="userAdmin"></a>
 ### Change User Details / Admin ###
 
 Change your details once logged in by pressing the *User Admin* button on the [Xi Search History](../history/history.html) page (or access directly at [userGUI/userAdmin.html](/userGUI/userAdmin.html)). For regular users the only editable item is the email address. This can be changed and, if validated, then set by pressing the *Update User* button. A password reset can be requested by pressing *Reset Password*. Finally, your account can be deactivated by pressing *Delete User*. This can only be undone by appealing to a Xi Administrator - a dialog asks if you are completely sure.
