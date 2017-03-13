@@ -2,6 +2,8 @@
 
 The Xi Search Submission Page is the mechanism through which new searches are specified and passed to Xi. The page is broken into 3 logical steps (and the final Submit action). The sections below describe what each step does and how to complete it.
 
+![Search Submission Screenshot](../../img/submit.png)
+
 ### 1. Choose Acquisitions ###
 Acquisitions may be included in a new search in two ways.
 1. Construct a new acquisition to be uploaded to the Xi Database and then used in a search.
@@ -43,7 +45,7 @@ This step involves setting the following parameters for the new search:
 * Losses
 * Search Notes (optional)
 
-*Name* is used in the search listings in the [Xi Search History](../history/history.html) page. Choose a name that reflects the search, otherwise it will default to concatenating all the chosen acqusition names along with a timestamp.
+*Name* is used in the search listings in the [Xi Search History](../history/index.html) page. Choose a name that reflects the search, otherwise it will default to concatenating all the chosen acqusition names along with a timestamp.
 
 *Cross-Linker* and *Enzyme* are single choices and the drop-down menu for both reflects that. Use the radio buttons within each respective drop-down to make your choice.
 
@@ -63,5 +65,5 @@ If the previous steps have been completed, then the *Submit New Search* button w
 
 Choose whether you wish the search to be private using the *Set Search As Private?* checkbox. This acts in a similar manner to the private acquisition and sequence upload options, in that a private search will only be visible to you and Xi administrators.
 
-Once happy with the choices made on the page, press *Submit New Search* to register and start the search on the Xi Search Engine. You'll then be directed to the [Xi Search History](../history/history.html) page where its progress can be monitored, or another new search begun.
+Once happy with the choices made on the page, press *Submit New Search* to register and start the search on the Xi Search Engine. You'll then be directed to the [Xi Search History](../history/index.html) page where its progress can be monitored, or another new search begun.
 
