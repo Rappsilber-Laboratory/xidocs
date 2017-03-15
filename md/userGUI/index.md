@@ -15,7 +15,7 @@ Go to the [Create New Xi User Account](/userGUI/userReg.html) page and pick a us
 [Log in](/userGUI/userLogin.html) using the username and password combination you chose when creating your account. You'll then be taken to the [Xi Search History](../history/index.html) page.
 
 ### Resetting your password ###
-Forgotten passwords can be reset by selecting *Click Here* next to the 'Forgotten Password?' label on the log in page. You'll then see a page asking for either your email or Xi username, along with a recaptacha dialog. Complete these details and press the *Get Email with Reset Password Link* button. You will then receive an email which contains a unique time-limited link to a page from which your password can be reset. On this page simply choose a new password and press *Set New Password*.
+Forgotten passwords can be reset by selecting *Reset Password* next to the 'Forgotten Password?' label on the log in page. You'll then see a page asking for either your email or Xi username, along with a recaptacha dialog. Complete these details and press the *Get Email with Reset Password Link* button. You will then receive an email which contains a unique time-limited link to a page from which your password can be reset. On this page simply choose a new password and press *Set New Password*.
 
 This process may seem convoluted but it ensures only the owner of the account's registered email (i.e. you) can set a new password. Also, until the password reset is performed, the old password remains in force, so no-one can disable your account by typing in your username/email and requesting new passwords.
 
