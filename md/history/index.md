@@ -22,16 +22,18 @@ Aggregate multiple searches for visualisation using the text fields in the *Agg 
 Press the *Aggregate* button in the title bar to view the aggregated searches with auto-validated links only. Press the *Agg. For FDR* button to include decoy and unvalidated links so an FDR filtering can be performed in the visualisation (exactly as for the single search).
 
 ### Validate a Search ###
-Press the link in the *Validation* column for a search to launch a dialog. The dialog has choices of whether to load links involving linear peptides and/or decoy proteins in the validation page.
+Click the underlined 'Validate' text in the *Validation* column to show a selection dialog for a particular search. This dialog has options to validate various combinations of cross-links - including linear peptides and/or decoy proteins. Selecting an option will then take you to the search's validation page and populate it with the requested links.
 
 ### Delete a Search ###
-Delete a search by pressing the button in the *Delete* column for a search. If the button is not present, you don't have the rights to delete it. A dialog will then appear asking if you are sure you wish to delete the search - as this cannot be undone.
+Delete a search by pressing the button in the *Delete* column for a search. If the button is not present, you don't have the rights to delete it. A dialog will then appear asking if you are sure you wish to delete the search - as this cannot be undone unless you are a superuser.
 
 ### Other Information ###
 Other columns show additional meta-data relating to individual searches.
 - *Visualise Search*: The search state is appended to the name of the search in this column. This shows whether a search is queuing, being processed, has an error, or has completed. Uncompleted searches will not have a link to launch the visualisation.
 - *Notes*: If a search had notes added when it was submitted in the [Search Submit](../../html/searchSubmit/index.html) page they will be shown here. Generally a tooltip will be needed to see the full text.
 - *Sequence*: The file name of the .fasta file used in the search.
+- *Enzyme*: The enzyme used in the search.
+- *Cross-Linkers*: A list of the cross-linkers used in the search.
 - *Submit date*: The date the search was submitted.
 - *ID*: Search ID.
 - *User*: The user who submitted the search.
