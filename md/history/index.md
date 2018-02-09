@@ -2,7 +2,7 @@
 The Xi Search History page is a paged table consisting of one row per search, with columns detailing meta-data for each search. Restricted users will see only their own searches; standard users can also see all non-private searches from other users. Superusers (Xi Administrators) can see all searches regardless of the search privacy settings.
 
 ### Title Bar ###
-For non-restricted users, the title bar contains a radio button option to see either only your searches or all searches you have permission to see - the default is to see only your own searches. Also, dependent on being a non-restricted user, there will be a button to launch a new search i.e. go to the [Search Submit](../../html/searchSubmit/index.html) page. There are also buttons that link to the [User Admin](../../html/userGUI/index.html#userAdmin) page and to log out of Xi.
+For non-restricted users, the title bar contains a radio button option to see either only your searches or all searches you have permission to see - the default is to see only your own searches. Also, dependent on being a non-restricted user, there will be a button to launch a new search i.e. go to the [Search Submit](../../html/searchSubmit/index.html) page. There are also buttons that link to the [User Admin](../../html/userGUI/index.html#userAdmin) page, to allow logging out, and a *Keep* checkbox which is explained at the end of the next section.
 
 ### Table Controls ###
 Paging is controlled through the *Page Number* control at the top left.
@@ -12,6 +12,8 @@ Filtering is performed by entering text in the text fields below the table heade
 Sorting can be done on columns with an arrow icon next to the filter text field. The default sort is by date.
 
 These controls can be used together to find searches of interest, though generally the filtering is the most useful.
+
+The *Keep* control in the title bar, if checked, will keep the current filtering and sorting settings for when the history page is next accessed on the same computer.
 
 ### Visualise a Single Search ###
 Links in the first two columns - *Visualise Search* and *+FDR* - launch the [Xi Visualisation](../../html/xi3/index.html). The first column's link only loads auto-validated crosslinks into the visualisation. The second column's link (*+FDR*) also loads decoy and unvalidated crosslinks, which allows basic FDR (False Discovery Rate) calculations to be used as a filter within the visualisation.
@@ -26,6 +28,9 @@ Click the underlined 'Validate' text in the *Validation* column to show a select
 
 ### Delete a Search ###
 Delete a search by pressing the button in the *Delete* column for a search. If the button is not present, you don't have the rights to delete it. A dialog will then appear asking if you are sure you wish to delete the search - as this cannot be undone unless you are a superuser.
+
+### Restart a Search ###
+Similarly, buttons in the *Restart* column allow the restarting of a stalled search. Again, the buttons only appear if you have the requisite rights.
 
 ### Other Information ###
 Other columns show additional meta-data relating to individual searches.

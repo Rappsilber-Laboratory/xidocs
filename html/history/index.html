@@ -11,12 +11,13 @@
 <h2>Xi Search History Page</h2>
 <p>The Xi Search History page is a paged table consisting of one row per search, with columns detailing meta-data for each search. Restricted users will see only their own searches; standard users can also see all non-private searches from other users. Superusers (Xi Administrators) can see all searches regardless of the search privacy settings.</p>
 <h3>Title Bar</h3>
-<p>For non-restricted users, the title bar contains a radio button option to see either only your searches or all searches you have permission to see - the default is to see only your own searches. Also, dependent on being a non-restricted user, there will be a button to launch a new search i.e. go to the <a href="../../html/searchSubmit/index.html">Search Submit</a> page. There are also buttons that link to the <a href="../../html/userGUI/index.html#userAdmin">User Admin</a> page and to log out of Xi.</p>
+<p>For non-restricted users, the title bar contains a radio button option to see either only your searches or all searches you have permission to see - the default is to see only your own searches. Also, dependent on being a non-restricted user, there will be a button to launch a new search i.e. go to the <a href="../../html/searchSubmit/index.html">Search Submit</a> page. There are also buttons that link to the <a href="../../html/userGUI/index.html#userAdmin">User Admin</a> page, to allow logging out, and a <em>Keep</em> checkbox which is explained at the end of the next section.</p>
 <h3>Table Controls</h3>
 <p>Paging is controlled through the <em>Page Number</em> control at the top left.</p>
 <p>Filtering is performed by entering text in the text fields below the table headers. Filters in different columns are applied conjunctively, i.e. a search must satisfy all filters to be shown.</p>
 <p>Sorting can be done on columns with an arrow icon next to the filter text field. The default sort is by date.</p>
 <p>These controls can be used together to find searches of interest, though generally the filtering is the most useful.</p>
+<p>The <em>Keep</em> control in the title bar, if checked, will keep the current filtering and sorting settings for when the history page is next accessed on the same computer.</p>
 <h3>Visualise a Single Search</h3>
 <p>Links in the first two columns - <em>Visualise Search</em> and <em>+FDR</em> - launch the <a href="../../html/xi3/index.html">Xi Visualisation</a>. The first column's link only loads auto-validated crosslinks into the visualisation. The second column's link (<em>+FDR</em>) also loads decoy and unvalidated crosslinks, which allows basic FDR (False Discovery Rate) calculations to be used as a filter within the visualisation.</p>
 <h3>Visualise Aggregated Searches</h3>
@@ -26,6 +27,8 @@
 <p>Click the underlined 'Validate' text in the <em>Validation</em> column to show a selection dialog for a particular search. This dialog has options to validate various combinations of cross-links - including linear peptides and/or decoy proteins. Selecting an option will then take you to the search's validation page and populate it with the requested links.</p>
 <h3>Delete a Search</h3>
 <p>Delete a search by pressing the button in the <em>Delete</em> column for a search. If the button is not present, you don't have the rights to delete it. A dialog will then appear asking if you are sure you wish to delete the search - as this cannot be undone unless you are a superuser.</p>
+<h3>Restart a Search</h3>
+<p>Similarly, buttons in the <em>Restart</em> column allow the restarting of a stalled search. Again, the buttons only appear if you have the requisite rights.</p>
 <h3>Other Information</h3>
 <p>Other columns show additional meta-data relating to individual searches.</p>
 <ul>
