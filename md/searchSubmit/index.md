@@ -57,7 +57,9 @@ This step involves setting the following parameters for the new search:
 
 *Cross-Linker* is initially a single-choice option that can be changed to allow the selection of multiple cross-linkers for the search. Click "Allow Multiple Selections" in the dropdown to allow this.
 
-*Enzyme* is currently always a single-choice option. Use the radio buttons within the drop-down to make your choice.
+*Enzyme* is by default a single-choice option. Use the radio buttons within the drop-down to make your choice.
+
+- Alternatively, press the "Construct Sequential Digestion" button in the dropdown to make a digestion composed of more than one enzyme. Here, add new steps with the "Add New Digestion Step" button and then choose the enzyme for that step through a drop-down. Set local Missed Cleavages settings by checking the "Local MC" checkbox for the step and entering a value in the revealed number input - if unset, that step will use the global Missed Cleavages setting. Steps can be deleted (if more than one) by pressing the button marked with an 'X', and reordered by dragging the 'double-arrow' icons. "Revert to Single Enzyme Choice" will return to the single enzyme selection state.
 
 *Ms Tolerance* and *Ms2 Tolerance* are numeric inputs and also have a choice of units (parts per million or Daltons).
 
@@ -78,7 +80,7 @@ Choose whether you wish the search to be private using the *Set Search As Privat
 Once happy with the choices made on the page, press *Submit New Search* to register and start the search on the Xi Search Engine. You'll then be directed to the [Xi Search History](../history/index.html) page where its progress can be monitored, or another new search begun.
 
 
-###Addendum###
+### Addendum ###
 
 #### Add New Crosslinker ###
 
