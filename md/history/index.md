@@ -34,6 +34,9 @@ Delete a search by pressing the button in the *Delete* column for a search. If t
 ### Restart a Search ###
 Restarting a stalled search can be performed by pressing the Restart button that may appear in this column. Completed and active searches will not display this option. Again, the buttons also only appear if you have permission to restart that search, and a dialog will ask if you definitely wish to proceed with this operation.
 
+### Base a New Search on an Existing Search ###
+The process of setting up the [Search Submit](../../html/searchSubmit/index.html) page can be eased by pre-populating it with another search's parameters. Show the *Base New* column via "Show Columns" and then select the button in the column for the existing search you wish to base a new search on. Note that parameters does not include the sequence and acquisition files.
+
 ### Other Information ###
 Other columns show additional meta-data relating to individual searches.
 
