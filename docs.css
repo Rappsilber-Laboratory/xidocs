@@ -1,16 +1,26 @@
-body {
-    height: auto;
-    padding: 0em 2em;
+html {
+	border-top: 8px solid #aaa;
+    border-bottom: 8px solid #aaa;
+	padding: 0.5em 0 0.5em 0;
     margin: 1em;
     font-size: 1em;
     font-family:"Calibri","Arial",sans-serif;
-    border-top: 8px solid #aaa;
-    border-bottom: 8px solid #aaa;
+	columns: auto 25em;
+	background: #eee;
 }
 
-body::before {
+html::before {
     content: "Xi Docs, © Rappsilber Lab 2018";
     float: right;
+	top: -0.5em;
+	position: relative;
+}
+
+body {
+    height: auto;
+	margin: 0 1em 0 1em;
+	padding: 0;
+	color: #222;
 }
 
 h2 {
@@ -30,4 +40,9 @@ img {
 	margin-right: auto;
     border: 1px solid #ccc;
     box-shadow: 6px 6px 5px #bbb;
+	margin-bottom: 3em;
+	padding-bottom: 0;
+}
+
+p {
 }
