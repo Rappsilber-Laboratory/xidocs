@@ -5,7 +5,10 @@ html {
     margin: 1em;
     font-size: 1em;
     font-family:"Calibri","Arial",sans-serif;
-	columns: auto 25em;
+	columns: 25em 3;
+	column-rule: 1px solid #ccc;
+	column-gap: 2em;
+	column-fill: balance;
 	background: #eee;
 }
 
@@ -18,7 +21,7 @@ html::before {
 
 body {
     height: auto;
-	margin: 0 1em 0 1em;
+	margin: 0;
 	padding: 0;
 	color: #222;
 }
@@ -26,11 +29,14 @@ body {
 h2 {
     font-size: 2.5em;
     border-bottom: 1px solid black;
+	margin-top: 0.5em;
 }
 
 h1 {
     font-size: 4em;
     border-bottom: 2px solid black;
+	margin-top: 0;
+	column-span: all;
 }
 
 img {
