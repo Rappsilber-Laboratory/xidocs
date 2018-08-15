@@ -16,7 +16,7 @@ Upon selection of a protein the sequences associated with it are shown in the mi
 
 Beneath this section is a trio of radio buttons for controlling the display of the strings in the sequence pairs. Either the entire strings can be shown ("show all"), or only the matching portions of the strings ("show similarities only"), or only the different portions of the strings ("show differences only"). Resulting elided sections of the strings are replaced with a sequence of quotation marks, whose length is logarithmically related to the length of the elided section.
 
-At the bottom of the panel are three controls for tweaking the Gotoh alignment algorithm. Both the "Gap Open Penalty" and the "Gap Extend Penalty" quantities can be changed, along with the Blosum matrix type the alignment scoring is derived from. One important distinction is that the changes in gap penalties are local to the protein that is currently under observation in the alignment view, whereas changing the Blosum matrix affects all proteins.
+At the bottom of the panel are three controls for tweaking the Gotoh alignment algorithm. Both the "Gap Open Penalty" and the "Gap Extend Penalty" quantities can be changed, along with the Blosum matrix type the alignment scoring is derived from. These changes are local to the protein currently under examination in this view.
  
 Lastly, like the other views that sit in sub-panels, this view can be resized by clicking on and dragging its corners, and repositioned by clicking on and dragging the title bar. The view can be closed using the X button next to the top right-hand corner.
 

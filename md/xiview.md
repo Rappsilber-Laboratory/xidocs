@@ -20,12 +20,12 @@ There are a number of different views available for exploring cross-links within
 The views themselves can be categorised as four basic types:
 
 * Those that show positional cross-link data:
-	1. XiNet
+	1. [Xi Net](./views/xinet.html "Xi Net")
 	2. [Circular View](./views/circular.html "Circular View")
 	3. [Matrix View](./views/matrix.html "Matrix View") aka Contact Map
 	4. [3D NGL View](./views/3dngl.html "3D View")
 	5. [Protein Info View](./views/proteinInfo.html "Protein Info View")
-	6. Spectrum View
+	6. [Spectrum View](https://spectrumviewer.org/help.php "Spectrum View") - Open the xiSpec Feature Support section in this link
 
 * Those that show cross-link metadata:
 	1. [Histogram View](./views/histogram.html "Histogram View")
