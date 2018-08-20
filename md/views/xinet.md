@@ -2,7 +2,9 @@
 
 ![Xi Net](../../img/xinet.png)
 
-The XiNet view displays a collection of cross-links between proteins as an interactive network visualisation - with the proteins as nodes shown as circles or elongated bars and the cross-links as edges drawn between these nodes at the relevant positions.
+The XiNet view displays cross-links as an interactive network visualisation - with the proteins as nodes shown as circles or elongated bars, and the cross-links as edges drawn between these nodes at the relevant positions.
+
+RIGHT clicking at protein toggles it between its circular and bar representations.
 
 #### Selecting ####
 
@@ -29,7 +31,7 @@ The XiNet specific menu sits in the top-right of the XiView display and contains
 
 Firstly, the "Drag To Pan Or Select" radio button pair controls whether left-clicking the mouse and dragging on the XiNet background either a) pans the network around or b) draws a rectangle, within which any encroaching protein representations are selected when the mouse button is released.
 
-The "Layout" portion of the menu allows the Saving and Loading of multiple layout configurations for each search - a time-saver in not needing to re-create preferred manual layouts from scratch. The "Auto" button will relayout the entire network using a built in layout algorithm from the cola.js layout library. 
+The "Layout" portion of the menu allows the Saving and Loading of multiple layout configurations for each search - a time-saver in not needing to re-create preferred manual layouts from scratch. The "Auto" button will relayout the entire network using a built in layout algorithm from the cola.js layout library.
 
 Finally, the "Image as SVG" button will download an SVG (vector format) file of the current state of the XiNet view. The filename will include information on search id and current filter settings.
 
@@ -37,5 +39,3 @@ Finally, the "Image as SVG" button will download an SVG (vector format) file of 
 ### Reference ###
 
 Combe, C. W., Fischer, L. & Rappsilber, J. [xiNET: Cross-link Network Maps With Residue Resolution](https://doi.org/10.1074/mcp.O114.042259 "DOI Link"). *Mol Cell Proteomics* 14, 1137–1147 (2015).
-
-
