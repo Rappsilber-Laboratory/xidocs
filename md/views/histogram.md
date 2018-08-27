@@ -2,7 +2,9 @@
 
 ![Histogram](../../img/histogram.png)
 
-The histogram view displays the distribution of a selected meta-data attribute for the current filtered cross-link and match population. The categories shown in the chart are taken from the current colour scheme if a discrete scheme (i.e. non-continuous and with a few separate categories), otherwise it reverts to the default self / between / homomultimeric cross-link categories.
+The histogram view displays the distribution of a selected meta-data attribute across the current filtered cross-link and match population. 
+
+The histogram automatically chooses a reasonable number and range of intervals to aggregate the data over and display (up to 100), and the categories shown in the chart are taken from the current colour scheme if a discrete scheme (i.e. non-continuous and with a few separate categories), otherwise it reverts to the default self / between / homomultimeric cross-link categories.
 
 Moving the mouse pointer across the histogram display details for those cross-links or matches in the interval under the pointer, and also highlights them in other active views. Left-clicking the mouse will then select those cross-links or matches, and when used in combination with the CTRL key performs an additional toggling functionality on the current selection. Selected cross-link/matches are displayed in the histogram as hatched yellow bars, showing the total for each interval in the current chart.
 
