@@ -4,17 +4,13 @@ Xi View contains many different ways to view cross-link data, from circle plots,
 
 This documentation is divided into four logical sections:
 
-1. Loading Data
-2. Filtering Data
-3. Viewing Data
-4. Exporting Data
+1. Filtering Data
+2. Viewing Data
+3. Exporting Data
 
+### 1. Filtering Data ###
 
-### 1. Loading Data ###
-
-### 2. Filtering Data ###
-
-### 3. Viewing Data ###
+### 2. Viewing Data ###
 There are a number of different views available for exploring cross-links within Xi View. One, the XiNet view, is a constant in the main window of xiView. The others are available via the "View" drop-down menu in the menu bar along the top of the window.
 
 The views themselves can be categorised as four basic types:
@@ -45,7 +41,7 @@ All the positional and meta-data views also support the idea of selecting / high
 #### Relation to Viewing Spectra ####
 The [Selected Match Table](./views/selectionTable.html "Selected Match Table") acts as the bridge to the underlying raw data displayed in the [Spectrum View](https://spectrumviewer.org/help.php "Spectrum View") - open the xiSpec Feature Support section in this link for spectrum viewer use instructions. Selecting a match in this table will displaying the underlying raw data in the Spectrum View.
 
-### 4. Exporting Data ###
+### 3. Exporting Data ###
 
 ![Export Dialog](../img/export.png)
 
