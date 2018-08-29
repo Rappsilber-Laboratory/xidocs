@@ -25,7 +25,6 @@ The views themselves can be categorised as four basic types:
 	3. [Matrix View](./views/matrix.html "Matrix View") aka Contact Map
 	4. [3D NGL View](./views/3dngl.html "3D View")
 	5. [Protein Info View](./views/proteinInfo.html "Protein Info View")
-	6. [Spectrum View](https://spectrumviewer.org/help.php "Spectrum View") - Open the xiSpec Feature Support section in this link
 
 * Those that show cross-link metadata:
 	1. [Histogram View](./views/histogram.html "Histogram View")
@@ -35,7 +34,16 @@ The views themselves can be categorised as four basic types:
 	1. [Alignment View](./views/alignment.html "Alignment View")
 	2. [Search Summaries](./views/searchSummaries.html "Search Summaries")
 
-Finally, the [Legend View](./views/legend.html "Legend View") can be considered in a category of its own, its main function to choose and refine a colour scheme used in the rest of the Xi View interface.
+The [Legend View](./views/legend.html "Legend View") can be considered in a category of its own, its main function to choose and refine a colour scheme used in the rest of the Xi View interface.
+
+#### Filtering ####
+All the positional and metadata views above reflect the current filter state, only showing cross-links / matches that pass the filter settings.
+
+#### Selection ####
+All the positional and meta-data views also support the idea of selecting / highlighting specific cross-links and matches, with selections and highlighting performed in one view reflected in other active views.
+
+#### Relation to Viewing Spectra ####
+The [Selected Match Table](./views/selectionTable.html "Selected Match Table") acts as the bridge to the underlying raw data displayed in the [Spectrum View](https://spectrumviewer.org/help.php "Spectrum View") - open the xiSpec Feature Support section in this link for spectrum viewer use instructions. Selecting a match in this table will displaying the underlying raw data in the Spectrum View.
 
 ### 4. Exporting Data ###
 
