@@ -13,7 +13,7 @@ This documentation is divided into four logical sections:
 ### 2. Viewing Data ###
 There are a number of different views available for exploring cross-links within Xi View. One, the XiNet view, is a constant in the main window of xiView. The others are available via the "View" drop-down menu in the menu bar along the top of the window.
 
-The views themselves can be categorised as four basic types:
+The views themselves can be categorised as three basic types:
 
 * Those that show positional cross-link data:
 	1. [Xi Net](./views/xinet.html "Xi Net")

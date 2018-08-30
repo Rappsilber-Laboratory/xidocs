@@ -2,17 +2,19 @@
 
 ![Matrix View](../../img/matrix.png)
 
+### Representation ###
+
 The Matrix View (aka a Contact Map) lays out a pair of proteins along the X and Y axes of a matrix and plots points where the row and column of the linked residues of a cross-link intersect. e.g. if a cross-link went between Protein A at Residue 200 and Protein B at Residue 100, a matrix view between Protein A and B would plot a point at the coordinate (200,100).
 
 The matrix is extremely useful for exploring dense areas of cross-linking that could be impenetrable in other views. In addition, when a reasonably sized pdb file is used, full distance information can be plotted in the background of the matrix, enabling cross-links to be seen against this context.
 
 The cross-links within the matrix are coloured with the current colour scheme, and a tooltip will show information on any cross-links within a small distance of the mouse pointer.
 
-### Options ###
+### Interaction & Options ###
 
 #### Panning & Selecting
 
-The first two options, "Drag to Pan" & "Or Select", are a pair of radio buttons that decide the model of operation of the matrix when the left mouse button is clicked and dragged. When the "Pan" mode is set, the mouse-wheel will smoothly change the magnification level of the matrix, and holding down the left-mouse button and dragging will pan the matrix if the magnification level permits. Alternatively, when the "Select" mode is set, the mouse wheel has no effect, and holding down the left-mouse button and dragging will draw a box in the view that will select all the cross-links within it when the mouse button is released. This box, when in the "Select" mode, can also be resized and dragged around the matrix to gauge its effect upon cross-link selection. Left-clicking anywhere outside the box will remove it and the current cross-link selection.
+The first two options, "Drag to Pan" & "Or Select", are a pair of radio buttons that decide the mode of operation of the matrix when the left mouse button is clicked and dragged. When the "Pan" mode is set, the mouse-wheel will smoothly change the magnification level of the matrix, and holding down the left-mouse button and dragging will pan the matrix if the magnification level permits. Alternatively, when the "Select" mode is set, the mouse wheel has no effect, and holding down the left-mouse button and dragging will draw a box in the view that will select all the cross-links within it when the mouse button is released. This box, when in the "Select" mode, can also be resized and dragged around the matrix to gauge its effect upon cross-link selection. Left-clicking anywhere outside the box will remove it and the current cross-link selection.
 
 #### Other
 

@@ -2,6 +2,8 @@
 
 ![Search Summary](../../img/searchSummary.png)
 
+### Representation ###
+
 The search summary displays an expandable/collapsible tree of metadata associated with the searches currently loaded into Xi View. This offers a sanity check for users to see if the searches they're viewing do indeed use the files and settings they think it does.
 
 ### Options ###

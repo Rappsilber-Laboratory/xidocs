@@ -2,7 +2,11 @@
 
 ![Circular View](../../img/circular.png)
 
-This view uses a version of the popular Circos layout to display the Cross-Links. Proteins are arranged around the circumference of the circle and cross-links are shown connecting proteins at the appropriate positions.
+### Representation ###
+
+This view uses a version of the popular Circos layout to display the Cross-Links. Proteins are arranged around the circumference of the circle as thick arcs relative to their length, and cross-links are shown as curves connecting proteins at the appropriate positions. Where possible proteins are labelled with their names, though for displays showing many proteins this is not always possible, especially for shorter proteins.
+
+### Direct Interaction ###
 
 Like the other views in Xi View, individual cross-links can be highlighted by moving the mouse pointer over them (plus a tooltip supplies details on the particular cross-link). Similarly, cross-links can be selected by using the left mouse button. In conjunction with the CTRL key, multiple cross-links can be selected (by clicking on unselected links) and currently selected cross-links can be unselected.
 
@@ -18,6 +22,7 @@ There are two drop-down menus present that can affect the visual presentation of
 The first, "Order Proteins", decides the ordering of proteins around the circumference and as such is useful for multiple protein searches. The proteins may be ordered either alphabetically (default), by sequence length, or using an algorithm intended to set the protein ordering to reduce visual crossings in the display (this necessarily only reduces crossings of between cross-links, self cross-links are at set positions within a single protein).
 
 The second drop-down menu, "Show", toggles on and off a set of visual preferences. These are:
+
 1. All Proteins - for searches with many proteins the circular view can become crowded. This options dynamically removes proteins which have no cross-links that pass the currently set filter. The drawback is that changing the filter will then relayout the view i.e. proteins will very much not tend to stay in the same position.
 2. Residue Labels (If Few Links) - if only a small number of cross-links are currently displayed (around 20) then the amino acid letters can be shown at the ends of the cross-links.
 3. Self-Links on Outside - self links can be moved to the outside of the protein circle, leaving only between links in the interior of the circle.
