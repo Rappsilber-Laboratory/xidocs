@@ -4,15 +4,15 @@
 <title>xinet</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
-@import url("../../docs.css");
-@import url("../docs.css");
-@import url ("/xidocs/docs.css");
+@import url("/xidocs/docs.css");
 </style>
 </head>
 <body>
 <h2>XiNet View</h2>
 <p><img src="../../img/xinet.png" alt="Xi Net" /></p>
-<p>The XiNet view displays a collection of cross-links between proteins as an interactive network visualisation - with the proteins as nodes shown as circles or elongated bars and the cross-links as edges drawn between these nodes at the relevant positions.</p>
+<h3>Representation</h3>
+<p>The XiNet view displays a collection of cross-links between proteins as an interactive network visualisation - with the proteins (nodes) shown as circles or elongated bars and the cross-links as edges drawn between these nodes at the relevant positions.</p>
+<h3>Interaction</h3>
 <h4>Selecting</h4>
 <p>Individual cross-links can be highlighted by moving the mouse pointer over them (plus a tooltip supplies details on the particular cross-link). Similarly, cross-links can be selected by using the left mouse button. In conjunction with the CTRL key, multiple cross-links can be selected (by clicking on unselected links) and currently selected cross-links can be unselected.</p>
 <p>When the mouse pointer is over a protein itself a tooltip displays basic information (for more comprehensive data, use the selected proteins view), and it can be selected by left-clicking the mouse. When used with the CTRL key this also toggles this protein's selection on/off with the existing selection.</p>
@@ -25,7 +25,7 @@
 <h3>Options</h3>
 <p>The XiNet specific menu sits in the top-right of the XiView display and contains several options for tweaking or storing the current XiNet layout.</p>
 <p>Firstly, the &quot;Drag To Pan Or Select&quot; radio button pair controls whether left-clicking the mouse and dragging on the XiNet background either a) pans the network around or b) draws a rectangle, within which any encroaching protein representations are selected when the mouse button is released.</p>
-<p>The &quot;Layout&quot; portion of the menu allows the Saving and Loading of multiple layout configurations for each search - a time-saver in not needing to re-create preferred manual layouts from scratch. The &quot;Auto&quot; button will relayout the entire network using a built in layout algorithm from the cola.js layout library.</p>
+<p>The &quot;Layout&quot; portion of the menu allows the Saving and Loading of multiple layout configurations for each search - a time-saver in not needing to re-create preferred manual layouts from scratch. The &quot;Auto&quot; button will relayout the entire network using a built in layout algorithm from the cola.js layout library. </p>
 <p>Finally, the &quot;Image as SVG&quot; button will download an SVG (vector format) file of the current state of the XiNet view. The filename will include information on search id and current filter settings.</p>
 <h3>Reference</h3>
 <p>Combe, C. W., Fischer, L. &amp; Rappsilber, J. <a href="https://doi.org/10.1074/mcp.O114.042259" title="DOI Link">xiNET: Cross-link Network Maps With Residue Resolution</a>. <em>Mol Cell Proteomics</em> 14, 1137–1147 (2015).</p>

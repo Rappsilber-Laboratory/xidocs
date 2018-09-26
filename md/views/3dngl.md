@@ -4,7 +4,16 @@
 
 This view integrates the NGL 3D viewer (see references below) within Xi, showing the currently filtered cross-links in the context of a chosen PDB structure.
 
+### Representation ###
+
+The majority of the panel is devoted to a 3D representation of the loaded PDB file. Proteins are shown as configurable structures with cross-links superimposed on top as elongated coloured bars. Residues at either end of the cross-links are shown as small grey spheres.
+
+Within this panel is a short piece of textual information giving the PDB filename and the coverage it has of the proteins in the search. This coverage can range from complete (100%) for single proteins with a fully covering PDB to tiny fractions (1-2%) for large protein complexes.
+
+### Direct Interaction ###
+
 Positional manipulation of the view is performed by clicking anywhere on the view and dragging the mouse pointer with the following effects:
+
 * Left-click and drag - rotates structure around XY axes (up/down drags around X axis, left/right around Y axis)
 * Right-click, CTRL key and drag - rotates structure around Z axis
 * Right-click and drag - pans structure in XY plane
@@ -14,6 +23,7 @@ Positional manipulation of the view is performed by clicking anywhere on the vie
 * Mouse-wheel and SHIFT key - moves the near clip and far fog effects in and out of the z-axis. Useful for seeing slices of structure but beware doing it by accident. If you're seeing large parts of the structure cut off when you rotate it this is what you've done.
 
 Pressing certain keys also performs operations on the view:
+
 * 'R' - Re-position the structure so it sits in the centre of the window
 * 'I' - Slowly rotates the structure around the Y-axis - toggle back off by pressing 'I' again
 * 'K' - Slowly oscillate the structure around the Y-axis - aids depth perception of structure
@@ -23,8 +33,6 @@ A more in-depth manual for NGL is available here --> [NGL Manual](http://nglview
 Like the other views in Xi View, individual cross-links can be highlighted by moving the mouse pointer over them (plus a tooltip supplies details on the particular cross-link). Similarly, cross-links can be selected by using the left mouse button. In conjunction with the CTRL key, multiple cross-links can be selected (by clicking on unselected links) and currently selected cross-links can be unselected.
 
 Clicking with the left mouse button on the background of the view will clear all selections.
-
-At the top of the panel that contains the 3D representation is a short piece of textual information giving the PDB filename and the coverage it has of the proteins in the search. This coverage can range from complete (100%) for single proteins with a fully covering PDB to tiny fractions (1-2%) for large protein complexes.
 
 ### Options ###
 
@@ -39,10 +47,12 @@ The second selection dropdown, "Colour Proteins", controls the colouring of the 
 A third drop-down menu, "Show", holds options for setting various decorations on the protein structure, and some options for controlling how cross-links are superimposed upon the structure.
 
 For cross-links there are two independent options, we can:
+
 1. Show selected cross-links only - this reduces clutter and selected cross-links aren't obscured by unselected cross-links, which is particularly noticeable in 3D.
 2. Show shortest possible cross-links only - in PDB structures with multiple copies of a protein, there are multiple places a cross-link could be positioned. E.g. in a dimer structure (protein copies A and B) a cross-link between positions 1 and 2 could have four possible solutions, A1-A2, A1-B2, B1-A2 or B1-B2. This setting, selected by default, tells the view to show only the shortest possible cross-link out of these possibilities.
 
 The other available options under "Show" are
+
 * Show Cross-Linked Residues - represent residues as balls at the ends of displayed cross-links.
 * Show All Proteins - show proteins in multiple protein PDBs that aren't potentially involved in the current set of filtered cross-links. 
 * Show Distance Labels - displayed cross-links are annotated with a small label showing their length in Angstroms. These show up regardless for selected or highlighted cross-links.

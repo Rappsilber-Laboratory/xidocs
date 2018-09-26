@@ -4,14 +4,17 @@
 <title>3dngl</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
-@import url("../../docs.css");
-@import url("../docs.css");
+@import url("/xidocs/docs.css");
 </style>
 </head>
 <body>
 <h2>3D (NGL) View</h2>
 <p><img src="../../img/3d.png" alt="3D View" /></p>
 <p>This view integrates the NGL 3D viewer (see references below) within Xi, showing the currently filtered cross-links in the context of a chosen PDB structure.</p>
+<h3>Representation</h3>
+<p>The majority of the panel is devoted to a 3D representation of the loaded PDB file. Proteins are shown as configurable structures with cross-links superimposed on top as elongated coloured bars. Residues at either end of the cross-links are shown as small grey spheres.</p>
+<p>Within this panel is a short piece of textual information giving the PDB filename and the coverage it has of the proteins in the search. This coverage can range from complete (100%) for single proteins with a fully covering PDB to tiny fractions (1-2%) for large protein complexes.</p>
+<h3>Direct Interaction</h3>
 <p>Positional manipulation of the view is performed by clicking anywhere on the view and dragging the mouse pointer with the following effects:</p>
 <ul>
 <li>Left-click and drag - rotates structure around XY axes (up/down drags around X axis, left/right around Y axis)</li>
@@ -31,12 +34,11 @@
 <p>A more in-depth manual for NGL is available here --&gt; <a href="http://nglviewer.org/ngl/api/manual/index.html" title="http://nglviewer.org/ngl/api/manual/index.html">NGL Manual</a></p>
 <p>Like the other views in Xi View, individual cross-links can be highlighted by moving the mouse pointer over them (plus a tooltip supplies details on the particular cross-link). Similarly, cross-links can be selected by using the left mouse button. In conjunction with the CTRL key, multiple cross-links can be selected (by clicking on unselected links) and currently selected cross-links can be unselected.</p>
 <p>Clicking with the left mouse button on the background of the view will clear all selections.</p>
-<p>At the top of the panel that contains the 3D representation is a short piece of textual information giving the PDB filename and the coverage it has of the proteins in the search. This coverage can range from complete (100%) for single proteins with a fully covering PDB to tiny fractions (1-2%) for large protein complexes.</p>
 <h3>Options</h3>
 <p>There are a number of options available that can affect the visual presentation of the cross-links in the 3D view.</p>
 <p>The &quot;Re-Centre&quot; button re-centres the structure within the panel (also available by pressing &quot;R&quot;.)</p>
-<p>There are two single selection drop-downs for styling the protein structure itself. The first, &quot;Draw Proteins&quot;, changes the style of the protein representation. The default is &quot;Cartoon&quot; with other styles described here --&gt; <a href="%22http://nglviewer.org/ngl/api/manual/molecular-representations.html%22">NGL Representation Styles</a>. In practice, they range from atom-level representations like &quot;Point&quot; or &quot;Ball+Stick&quot; to more abstract representations such as &quot;Rope&quot; or &quot;Cartoon&quot;.</p>
-<p>The second selection dropdown, &quot;Colour Proteins&quot;, controls the colouring of the protein representations. They range from the default &quot;Uniform&quot; grey colouring to colour schemes that change on a per-atom or per-residue basis such as &quot;Element&quot; or &quot;Residue Name&quot;. Consequently, some colour schemes are only useful in conjunction with given representation styles e.g. the &quot;Element&quot; colour scheme works with &quot;Ball+Stick&quot; but has no effect in the &quot;Cartoon&quot; representation. A full list of NGL colour schemes can be found here --&gt; <a href="%22http://nglviewer.org/ngl/api/manual/coloring.html%22">NGL Colour Schemes</a>.</p>
+<p>There are two single selection drop-downs for styling the protein structure itself. The first, &quot;Draw Proteins&quot;, changes the style of the protein representation. The default is &quot;Cartoon&quot; with other styles described here --&gt; <a href="&quot;http://nglviewer.org/ngl/api/manual/molecular-representations.html&quot;">NGL Representation Styles</a>. In practice, they range from atom-level representations like &quot;Point&quot; or &quot;Ball+Stick&quot; to more abstract representations such as &quot;Rope&quot; or &quot;Cartoon&quot;.</p>
+<p>The second selection dropdown, &quot;Colour Proteins&quot;, controls the colouring of the protein representations. They range from the default &quot;Uniform&quot; grey colouring to colour schemes that change on a per-atom or per-residue basis such as &quot;Element&quot; or &quot;Residue Name&quot;. Consequently, some colour schemes are only useful in conjunction with given representation styles e.g. the &quot;Element&quot; colour scheme works with &quot;Ball+Stick&quot; but has no effect in the &quot;Cartoon&quot; representation. A full list of NGL colour schemes can be found here --&gt; <a href="&quot;http://nglviewer.org/ngl/api/manual/coloring.html&quot;">NGL Colour Schemes</a>.</p>
 <p>A third drop-down menu, &quot;Show&quot;, holds options for setting various decorations on the protein structure, and some options for controlling how cross-links are superimposed upon the structure.</p>
 <p>For cross-links there are two independent options, we can:</p>
 <ol>
@@ -46,7 +48,7 @@
 <p>The other available options under &quot;Show&quot; are</p>
 <ul>
 <li>Show Cross-Linked Residues - represent residues as balls at the ends of displayed cross-links.</li>
-<li>Show All Proteins - show proteins in multiple protein PDBs that aren't potentially involved in the current set of filtered cross-links.</li>
+<li>Show All Proteins - show proteins in multiple protein PDBs that aren't potentially involved in the current set of filtered cross-links. </li>
 <li>Show Distance Labels - displayed cross-links are annotated with a small label showing their length in Angstroms. These show up regardless for selected or highlighted cross-links.</li>
 <li>Protein Chain Label Style - Long, Short, None - a set of radio buttons for deciding the content of the label annotating each protein. Long for a verbose description which NGL pulls from the PDB file (plus the short description), short for a label with the protein name and chain index, and none to remove these labels altogether.</li>
 </ul>

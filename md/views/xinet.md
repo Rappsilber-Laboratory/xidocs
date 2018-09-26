@@ -2,9 +2,17 @@
 
 ![Xi Net](../../img/xinet.png)
 
+<<<<<<< HEAD
 The XiNet view displays cross-links as an interactive network visualisation - with the proteins as nodes shown as circles or elongated bars, and the cross-links as edges drawn between these nodes at the relevant positions.
 
 RIGHT clicking at protein toggles it between its circular and bar representations.
+=======
+### Representation ###
+
+The XiNet view displays a collection of cross-links between proteins as an interactive network visualisation - with the proteins (nodes) shown as circles or elongated bars and the cross-links as edges drawn between these nodes at the relevant positions.
+
+### Interaction ###
+>>>>>>> b720cfa0f3da303831d1b43c121f7813860aaf71
 
 #### Selecting ####
 

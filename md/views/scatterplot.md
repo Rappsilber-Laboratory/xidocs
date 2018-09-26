@@ -4,10 +4,13 @@
 
 The scatterplot view displays the correlation of two chosen cross-link / match attributes in graphical form.
 
+### Representation ###
+
 Every filtered cross-link or match in the current dataset (which depends on the attributes chosen) is shown as a small square, coloured according to the current colour scheme, or yellow if currently selected, or orange if currently highlighted. Decoys are also shown as unfilled (transparent) squares, which just have an outline. The title above the scatterplot details the current quantity of displayed cross-links / matches, and the categories into which they are currently divided.
 
-Moving the mouse pointer across the scatterplot displays details in a tooltip for those cross-links or matches within a set distance (usually about 20 pixels). Selection in this view is performed by left-clicking and dragging the mouse pointer to cover the ranges of the two attributes of interest. This selection action can be used in combination with the CTRL key to toggle selection states - selecting unselected elements and de-selecting currently selected elements.
+### Interaction ###
 
+Moving the mouse pointer across the scatterplot displays details in a tooltip for those cross-links or matches within a set distance (usually about 20 pixels). Selection in this view is performed by left-clicking and dragging the mouse pointer to cover the ranges of the two attributes of interest. This selection action can be used in combination with the CTRL key to toggle selection states - selecting unselected elements and de-selecting currently selected elements.
 
 ### Options ###
 

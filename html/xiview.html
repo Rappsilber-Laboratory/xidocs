@@ -4,9 +4,7 @@
 <title>xiview</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
-@import url("../../docs.css");
-@import url("../docs.css");
-@import url ("/xidocs/docs.css");
+@import url("/xidocs/docs.css");
 </style>
 </head>
 <body>
@@ -14,16 +12,14 @@
 <p>Xi View contains many different ways to view cross-link data, from circle plots, protein network views, protein sequence views and tables, to raw spectra and peak views. Data can be filtered and exported, as can images. PDB datasets can be incorporated to give physical context to the cross-links, enabling 3D and contact map views, with automatic alignment performed between Xi and PDB sequences.</p>
 <p>This documentation is divided into four logical sections:</p>
 <ol>
-<li>Loading Data</li>
 <li>Filtering Data</li>
 <li>Viewing Data</li>
 <li>Exporting Data</li>
 </ol>
-<h3>1. Loading Data</h3>
-<h3>2. Filtering Data</h3>
-<h3>3. Viewing Data</h3>
+<h3>1. Filtering Data</h3>
+<h3>2. Viewing Data</h3>
 <p>There are a number of different views available for exploring cross-links within Xi View. One, the XiNet view, is a constant in the main window of xiView. The others are available via the &quot;View&quot; drop-down menu in the menu bar along the top of the window.</p>
-<p>The views themselves can be categorised as four basic types:</p>
+<p>The views themselves can be categorised as three basic types:</p>
 <ul>
 <li>
 <p>Those that show positional cross-link data:</p>
@@ -33,7 +29,6 @@
 <li><a href="./views/matrix.html" title="Matrix View">Matrix View</a> aka Contact Map</li>
 <li><a href="./views/3dngl.html" title="3D View">3D NGL View</a></li>
 <li><a href="./views/proteinInfo.html" title="Protein Info View">Protein Info View</a></li>
-<li><a href="https://spectrumviewer.org/help.php" title="Spectrum View">Spectrum View</a> - Open the xiSpec Feature Support section in this link</li>
 </ol>
 </li>
 <li>
@@ -51,8 +46,22 @@
 </ol>
 </li>
 </ul>
-<p>Finally, the <a href="./views/legend.html" title="Legend View">Legend View</a> can be considered in a category of its own, its main function to choose and refine a colour scheme used in the rest of the Xi View interface.</p>
-<h3>4. Exporting Data</h3>
+<p>The <a href="./views/legend.html" title="Legend View">Legend View</a> can be considered in a category of its own, its main function to choose and refine a colour scheme used in the rest of the Xi View interface.</p>
+<h4>Filtering</h4>
+<p>All the positional and metadata views above reflect the current filter state, only showing cross-links / matches that pass the filter settings.</p>
+<h4>Selection</h4>
+<p>All the positional and meta-data views also support the idea of selecting / highlighting specific cross-links and matches, with selections and highlighting performed in one view reflected in other active views.</p>
+<h4>Relation to Viewing Spectra</h4>
+<p>The <a href="./views/selectionTable.html" title="Selected Match Table">Selected Match Table</a> acts as the bridge to the underlying raw data displayed in the <a href="https://spectrumviewer.org/help.php" title="Spectrum View">Spectrum View</a> - open the xiSpec Feature Support section in this link for spectrum viewer use instructions. Selecting a match in this table will displaying the underlying raw data in the Spectrum View.</p>
+<h3>3. Exporting Data</h3>
+<p><img src="../img/export.png" alt="Export Dialog" /></p>
+<p>The Export menu in the top menu bar has a number of options for outputting the current filtered set of cross-links or matches.</p>
+<p>The first three offer the export in CSV format of various levels of information - cross-links, matches or residues. The Cross-Links export option will output a CSV containing the Cross-Link ID, position of the ends of the cross-link in terms of protein, peptide start position and position within the peptide. Other columns in the CSV will describe the number of matches, the highest score, and the validation status of the Cross-Link. If a PDB file has been loaded the distance and PDB co-ordinates of the link will be output if the Cross-Link has a valid distance. The shortest non-homomultimeric distance is chosen if multiple distances can be attached to the Cross-Link. Finally, for aggregated searches a column per search is present, indicating if the Cross-Link occurred in that particular search or not.</p>
+<p>The Matches export option performs a similar function to matches. Extra columns here include raw peptide sequences, charge, mass (experimental and calculated), mass/charge ratio, mass error, scan numbers and indices, crosslinker mass, fragment tolerance and ion types. Not all of these may be populated - it will depend on whether they are present in the input data. Similarly, distance data is also output if present, with the nuance that ambiguous matches can have multiple distances (the shortest one for each cross-link they could represent), and these are supplied as quoted comma-separated lists (so they won't break the csv format).</p>
+<p>The Residues export option outputs a much simpler csv file indicate how many times certain residues (AAs) turn up in the cross-link data set and how often each pairing of residue occurs. This is useful for confirming that cross-links only go between given residues.</p>
+<p>All exported CSV files are saved with timestamped file names that include a shorthand of the current data filter state.</p>
+<p>The final option &quot;Make Filtered Xi URL&quot; offers the option to export a URL that includes the current filter state. Upon re-opening in a browser this URL will set the filter to the values in the URL as a convenient shortcut.</p>
+<p>Finally, almost every view has the option to save their current representation as a SVG file, which again includes a timestamp and filter state within the filename.</p>
 
 </body>
 </html>
