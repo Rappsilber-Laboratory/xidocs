@@ -48,7 +48,7 @@ Note that the contents of the score histogram shown here is not affected by othe
 
 When the FDR mode is selected, this sub-bar allows a basic link-level FDR threshold to be set. Matches that do not pass the threshold are filtered out. Five pre-set levels are provided (1, 5, 10, 20, and 50%) along with an open-entry input for other values. FDRs are reported separately for within and between protein cross-link sets.
 
-![Filter Bar FDR](../../img/filterBarFDR.png)
+![Filter Bar FDR](../../img/filterBarFdr.png)
 
 ### Match Attributes ###
 
