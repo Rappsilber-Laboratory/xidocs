@@ -42,7 +42,7 @@ A set of checkboxes that pass or filter out cross-links based on their manually 
 
 This sub-section allows upper and/or lower score cut-offs for the matches to be set. These is done by entering text in the input fields or dragging on the histogram to set and move a range slider.
 
-Note that the contents of the score histogram shown here is not affected by other filter settings; to see a histogram of scores post-filtering open the [Histogram View](./views/histogram.html "Histogram View").
+Note that the contents of the score histogram shown here is not affected by other filter settings; to see a histogram of scores post-filtering open the [Histogram View](./histogram.html "Histogram View").
 
 ### FDR ###
 
