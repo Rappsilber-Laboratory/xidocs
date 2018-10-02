@@ -48,6 +48,13 @@ img {
     box-shadow: 6px 6px 5px #bbb;
 	margin-bottom: 3em;
 	padding-bottom: 0;
+	transform: scale(1);
+	transition: transform 2s;
+}
+
+img:hover {
+	will-change: transform;
+	transform: scale(2);
 }
 
 p {
