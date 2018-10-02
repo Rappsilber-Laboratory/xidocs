@@ -10,6 +10,8 @@ This documentation is divided into four logical sections:
 
 ### 1. Filtering Data ###
 
+One of the main benefits of XiView is the ability to filter the dataset based on various attributes. A description of the full set of the available attributes and operations can be found here on the [Filter Bar](./views/filterBar.html "Filter Bar") page.
+
 ### 2. Viewing Data ###
 There are a number of different views available for exploring cross-links within Xi View. One, the XiNet view, is a constant in the main window of xiView. The others are available via the "View" drop-down menu in the menu bar along the top of the window.
 
