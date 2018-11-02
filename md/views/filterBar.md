@@ -54,17 +54,17 @@ When the FDR mode is selected, this sub-bar allows a basic link-level FDR thresh
 
 A number of text boxes that allow matches to be filtered based on the contents of some of their attributes.
 
-'Peptide' filters to matches that include the entered text string as part of one of the peptide sequences it connects.
+- 'Peptide' filters to matches that include the entered text string as part of either of the linked peptide sequences, e.g. 'FAKR' would filter to matches where one of the linked peptides includes the subsequence FAKR. Separating two strings with a hyphen will filter to matches where one peptide includes one subsequence and the second one the other, e.g. 'FAKR-KK' will filter to matches where FAKR is in one peptide and KK in the other. 
 
-'Protein' takes in a comma separated list of values that are text matched against protein descriptions and names. Matches that don't link such proteins are filtered out. A hyphen can be used to specify matches that link two particular proteins or sets of proteins. E.g., "ALBU" would show matches that involve a protein containing the text 'ALBU' in its name or description such as ALBU-HUMAN. "BOVINE-CHICK" would show all matches that connect proteins where one protein contains 'BOVINE' and the other 'CHICK'. "ALBU, BOVINE-CHICK" would additively combine the previous two scenarios.
+- 'Protein' takes in a comma separated list of values that are text matched against protein descriptions and names. Matches that don't link such proteins are filtered out. A hyphen can be used to specify matches that link two particular proteins or sets of proteins. E.g., "ALBU" would show matches that involve a protein containing the text 'ALBU' in its name or description such as ALBU-HUMAN. "BOVINE-CHICK" would show all matches that connect proteins where one protein contains 'BOVINE' and the other 'CHICK'. "ALBU, BOVINE-CHICK" would additively combine the previous two scenarios.
 
-'Charge' filters out matches that do not have the given input charge state, which is always a positive integer. 
+- 'Charge' filters out matches that do not have the entered charge state, which is always a positive integer. Two numbers separated by a hyphen indicate that a range will be used as a filter e.g. '3-6' will filter out all matches with charge states less then 3 or more than 6.
 
-'Run' filters out matches whose 'Run' attribute does not contain the entered text as a sub-string.
+- 'Run' filters out matches whose 'Run' attribute does not contain the entered text as a sub-string.
 
-'Scan' similarly filters out matches whose 'Scan' attribute does not contain the entered text as a sub-string. Whilst 'Scan' is actually a number, treating it as a string here allows more flexibility - entering say '21' will pass all matches whose scan number includes '21' at some position, rather than exactly matching '21'.
+- 'Scan' similarly filters out matches whose 'Scan' attribute does not contain the entered text as a sub-string. Whilst 'Scan' is actually a number, treating it as a string here allows more flexibility: entering say '21' will pass all matches whose scan number includes '21' at some position, rather than exactly matching '21'.
 
-'Residue Pairs per PPI' sets a threshold on the number of distinct matches between pairs of proteins that needs to be met before those matches are shown. This can be useful for quickly filtering out weakly interacting protein-protein pairs, and can tidy up the XiNet view in particular.
+- 'Residue Pairs per PPI' sets a threshold on the number of distinct matches between pairs of proteins that needs to be met before those matches are shown. This can be useful for quickly filtering out weakly interacting protein-protein pairs, and can tidy up the XiNet view in particular.
 
 ### Summary ###
 
