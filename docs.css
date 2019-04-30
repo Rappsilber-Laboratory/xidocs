@@ -50,11 +50,13 @@ img {
 	padding-bottom: 0;
 	transform: scale(1);
 	transition: transform 2s;
+    transform-origin: left;
 }
 
 img:hover {
 	will-change: transform;
 	transform: scale(2);
+    /*transform-origin: left;*/
 }
 
 p {
