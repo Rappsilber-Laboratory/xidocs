@@ -6,9 +6,9 @@ This view integrates the NGL 3D viewer (see references below) within Xi, showing
 
 ### Representation ###
 
-The majority of the panel is devoted to a 3D representation of the loaded PDB file. Proteins are shown as configurable structures with cross-links superimposed on top as elongated coloured bars. Residues at either end of the cross-links are shown as small grey spheres.
+The majority of the panel is devoted to a 3D representation of the loaded PDB file. Proteins are shown as configurable structures with cross-links superimposed on top as elongated coloured bars. Residues at either end of the cross-links are shown as small grey spheres. Cross-links where only one end is contained within the PDB are shown as residues.
 
-Within this panel is a short piece of textual information giving the PDB filename and the coverage it has of the proteins in the search. This coverage can range from complete (100%) for single proteins with a fully covering PDB to tiny fractions (1-2%) for large protein complexes.
+Within this panel are two short pieces of textual information giving the PDB filename and the coverage it has of the proteins and cross-links in the search. This coverage can range from complete (100%) for single proteins with a fully covering PDB to tiny fractions (1-2%) for large protein complexes. The number of cross-links can similarly vary from all of the currently filtered cross-links to only a handful where a PDB covers only a small fraction of the search proteins. As a rule of thumb a PDB file that covers only 50% of the protein sequences in a search can expect to display 25% (0.5 squared) of the full link set (both residues are covered) and 50% of the remaining links with one residue covered. For 10% coverage this drops to 1% (0.1 squared) for full links and 18% for half links.
 
 ### Direct Interaction ###
 
@@ -42,9 +42,11 @@ The "Re-Centre" button re-centres the structure within the panel (also available
 
 There are three single selection drop-downs for choosing the parts of the PDB to display and for styling the protein structure itself. The first, "Assembly", offers a choice of which biological assembly within the PDB file to display. The default is the whole PDB structure, and other options may include UnitCell (usually the same thing), SuperCell (multiple copies of the PDB arranged spatially) and various Biological Assemblies. These Biological Assemblies can range in scale from part of the PDB, through matching the PDB exactly, up to being composed of multiple copies of the PDB - experimentation with these settings is the only way to find out for certain though details on definitions can be found at [https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/biological-assemblies](https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/biological-assemblies "Biological Assemblies").
 
+The choice of assembly is important as it also usually constrains the PDB sub-structure on which cross-link distances will be calculated. For instance with PDB 1AO6, choosing to display the full PDB (two adjacent copies of the same protein) will look for possible cross-links within *and between* those two proteins. Choosing to display just one of the proteins (Bio-Assembly 1 or 2) will limit cross-link calculation to within just this protein.
+
 The second, "Draw Proteins", changes the style of the protein representation. The default is "Cartoon" with other styles described here --> [NGL Representation Styles]("http://nglviewer.org/ngl/api/manual/molecular-representations.html"). In practice, they range from atom-level representations like "Point" or "Ball+Stick" to more abstract representations such as "Rope" or "Cartoon".
 
-The third selection dropdown, "Colour Proteins", controls the colouring of the protein representations. They range from the default "Uniform" grey colouring to colour schemes that change on a per-atom or per-residue basis such as "Element" or "Residue Name". Consequently, some colour schemes are only useful in conjunction with given representation styles e.g. the "Element" colour scheme works with "Ball+Stick" but has no effect in the "Cartoon" representation. A full list of NGL colour schemes can be found here --> [NGL Colour Schemes]("http://nglviewer.org/ngl/api/manual/coloring.html").
+The third selection dropdown, "Colour Proteins", controls the colouring of the protein representations. They range from the default "Uniform" grey colouring to colour schemes that change on a per-atom or per-residue basis such as "Element" or "Residue Name". Consequently, some colour schemes are only useful in conjunction with given representation styles e.g. the "Element" colour scheme works with "Ball+Stick" but has no effect in the "Cartoon" representation. A full list of NGL colour schemes can be found here --> [NGL Colour Schemes]("http://nglviewer.org/ngl/api/manual/coloring.html"). There is one XiView specific scheme - "Residues with Half-Links" - that highlights residues that form one end of a cross-link where the other end is out of scope of the PDB structure.
 
 A final drop-down menu, "Show", holds several options for setting various decorations on the protein structure, and some options for controlling how cross-links are superimposed upon the structure.
 
@@ -52,17 +54,16 @@ For cross-links there are two independent options, we can:
 
 1. Show selected cross-links only - this reduces clutter and selected cross-links aren't obscured by unselected cross-links, which is particularly noticeable in 3D.
 2. Show shortest possible cross-links only - in PDB structures with multiple copies of a protein, there are multiple places a cross-link could be positioned. E.g. in a dimer structure (protein copies A and B) a cross-link between positions 1 and 2 could have four possible solutions, A1-A2, A1-B2, B1-A2 or B1-B2. This setting, selected by default, tells the view to show only the shortest possible cross-link out of these possibilities.
+3. Show Inter-Model distances - PDB structures are sometimes divided into separate models. These models may not be accurately aligned to each other or may even be a number of slightly different alternative structures occupying the same space, and thus distances between them may be meaningless. By default this option is set to off, but can be checked and will then calculate distances between residues in different PDB models.
 
 The other available options under "Show" are
 
 * Show Cross-Linked Residues - represent residues as balls at the ends of displayed cross-links.
 * Show All Proteins - show proteins in multiple protein PDBs that aren't potentially involved in the current set of filtered cross-links. 
 * Show Distance Labels - displayed cross-links are annotated with a small label showing their length in Angstroms. These show up regardless for selected or highlighted cross-links.
-* Protein Chain Label Style - Long, Short, None - a set of radio buttons for deciding the content of the label annotating each protein. Long for a verbose description which NGL pulls from the PDB file (plus the short description), short for a label with the protein name and chain index, and none to remove these labels altogether.
+* Protein Chain Label Style - Long, Short, None, Fixed Size - a set of radio buttons for deciding the content of the label annotating each protein. Long for a verbose description which NGL pulls from the PDB file (plus the short description), short for a label with the protein name and chain index, and none to remove these labels altogether. A final checkbox, "Fixed Size", determines whether these labels stay a fixed size when the structure is zoomed in or out.
 
 There is one remaining button which sits by itself, "Download Image as PNG", which will download a PNG (bitmap format) file of the current state of the 3D view. A vector graphic format is not available for this view. The filename will include information on search id and current filter settings.
-
-Lastly, like the other views that sit in sub-panels, the 3D view can be resized by clicking on and dragging its corners, and repositioned by clicking on and dragging the title bar. The view can be closed using the X button next to the top right-hand corner.
 
 ### References ###
 

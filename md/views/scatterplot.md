@@ -6,7 +6,7 @@ The scatterplot view displays the correlation of two chosen cross-link / match a
 
 ### Representation ###
 
-Every filtered cross-link or match in the current dataset (which depends on the attributes chosen) is shown as a small square, coloured according to the current colour scheme, or yellow if currently selected, or orange if currently highlighted. Decoys are also shown as unfilled (transparent) squares, which just have an outline. The title above the scatterplot details the current quantity of displayed cross-links / matches, and the categories into which they are currently divided.
+Every filtered cross-link or match in the current dataset (which depends on the attributes chosen) is shown as a small square, coloured according to either the current colour scheme, or yellow if currently selected, or orange if currently highlighted. Decoys are also shown as unfilled (transparent) squares, which just have an outline. The title above the scatterplot details the current quantity of displayed cross-links / matches, and the categories into which they are divided by the current colour scheme (if the current colour scheme is a continuous scale it will default to the inter and intra-protein categories).
 
 ### Interaction ###
 
@@ -19,8 +19,6 @@ The main controls for this view are the two "Plot this Data Along (X/Y)Axis" dro
 The "Add Jitter" toggle option decides whether to displace each square a small distance from its calculated position. This is useful for attributes with a small number of discrete values (e.g. Charge) where many representations would be overlaid at the same point. Turning jitter on gives a truer visual representation of the data density / distribution for these attributes.
 
 As in other views, the "Download Image as SVG" button will download an SVG (vector format) file of the current state of the view. The filename will include information on search id and current filter settings.
- 
-Lastly, like the other views that sit in sub-panels, this view can be resized by clicking on and dragging its corners, and repositioned by clicking on and dragging the title bar. The view can be closed using the X button next to the top right-hand corner.
 
 
 

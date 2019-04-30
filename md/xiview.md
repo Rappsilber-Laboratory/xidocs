@@ -2,7 +2,7 @@
 
 Xi View contains many different ways to view cross-link data, from circle plots, protein network views, protein sequence views and tables, to raw spectra and peak views. Data can be filtered and exported, as can images. PDB datasets can be incorporated to give physical context to the cross-links, enabling 3D and contact map views, with automatic alignment performed between Xi and PDB sequences.
 
-This documentation is divided into four logical sections:
+This documentation is divided into three logical sections:
 
 1. Filtering Data
 2. Viewing Data
@@ -32,13 +32,22 @@ The views themselves can be categorised as three basic types:
 	1. [Alignment View](./views/alignment.html "Alignment View")
 	2. [Search Summaries](./views/searchSummaries.html "Search Summaries")
 
-The [Legend View](./views/legend.html "Legend View") can be considered in a category of its own, its main function to choose and refine a colour scheme used in the rest of the Xi View interface.
+The [Legend View](./views/legend.html "Legend View") can be considered in a category of its own, its main function is to choose and refine a colour scheme used in the rest of the Xi View interface.
 
 #### Filtering ####
 All the positional and metadata views above reflect the current filter state, only showing cross-links / matches that pass the filter settings.
 
 #### Selection ####
 All the positional and meta-data views also support the idea of selecting / highlighting specific cross-links and matches, with selections and highlighting performed in one view reflected in other active views.
+
+#### Panel View Functionality ####
+The views shown within the panels have a number of functions available through the icons at the top of the panel frame. From left to right these are:
+1. Export an image (useful when the same option in the control panel has been hidden).
+2. Hide the view's control panel i.e. only show the visualisation.
+3. Maximise / restore the panel size.
+4. X - close the panel.
+
+The panels can also be resized by dragging their corners and repositioned by dragging their title bars.
 
 #### Relation to Viewing Spectra ####
 The [Selected Match Table](./views/selectionTable.html "Selected Match Table") acts as the bridge to the underlying raw data displayed in the [Spectrum View](https://spectrumviewer.org/help.php "Spectrum View") - open the xiSpec Feature Support section in this link for spectrum viewer use instructions. Selecting a match in this table will displaying the underlying raw data in the Spectrum View.
@@ -59,4 +68,4 @@ All exported CSV files are saved with timestamped file names that include a shor
 
 The final option "Make Filtered Xi URL" offers the option to export a URL that includes the current filter state. Upon re-opening in a browser this URL will set the filter to the values in the URL as a convenient shortcut.
 
-Finally, almost every view has the option to save their current representation as a SVG file, which again includes a timestamp and filter state within the filename.
+Finally, almost every view has the option to save their current representation as a SVG or PNG file, which again includes a timestamp and filter state within the filename. Most of the exported images also include a colour key, and most views generate SVG images that include a link to return to the search.

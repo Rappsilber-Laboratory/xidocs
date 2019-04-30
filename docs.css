@@ -13,7 +13,7 @@ html {
 }
 
 html::before {
-    content: "Xi Docs, © Rappsilber Lab 2018";
+    content: "Xi Docs, © Rappsilber Lab 2019";
     float: right;
 	top: -0.5em;
 	position: relative;

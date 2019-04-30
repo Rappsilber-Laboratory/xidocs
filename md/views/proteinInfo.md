@@ -12,8 +12,6 @@ However, the data associated with the "Sequence" row is dynamic and interactive.
 
 Selection can again be performed by left-clicking on a residue, and again any selections or highlighting performed in this view are reflected in other active views and vice versa.
 
-Lastly, like the other views that sit in sub-panels, this view can be resized by clicking on and dragging its corners, and repositioned by clicking on and dragging the title bar. The view can be closed using the X button next to the top right-hand corner.
-
 
 
 

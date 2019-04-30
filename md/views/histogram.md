@@ -20,9 +20,9 @@ The main control for this view is the "Plot this Data Along Axis" dropdown which
 
 If a PDB file has been loaded, then the Cross-Link Distances are available to plot as one of the options. With this attribute a sample distribution of potential distances from the PDB is also plotted (as the "Random" series in the chart) to show users whether their cross-link distances are differentiable from background noise. Also, a further dropdown becomes available, "Random Scope", which allows a user to select the range from which these sample distances are taken - from anywhere within the full PDB, from only within copies of the same proteins in the PDB, or only from within only the same chains in the PDB. This option can produce large changes in the sample distribution - with samples taken only from within the same chains typically having much smaller average distances. If crosslinker specificities are available then the random distances are chosen only between cross-linkable residues.
 
+The random distances are also affected by two settings in the 3D View. Random distances will only be selected from within the current assembly, and also never between PDB models if "inter-model distances" is not checked. This can be verified by changing these settings in the 3D view, and if it affects the possible links the randoms can be chosen from it will automatically change the random distribution here.
+
 As in other views, the "Download Image as SVG" button will download an SVG (vector format) file of the current state of the view. The filename will include information on search id and current filter settings.
- 
-Lastly, like the other views that sit in sub-panels, this view can be resized by clicking on and dragging its corners, and repositioned by clicking on and dragging the title bar. The view can be closed using the X button next to the top right-hand corner.
 
 
 
