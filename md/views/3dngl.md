@@ -48,7 +48,7 @@ The second, "Draw Proteins", changes the style of the protein representation. Th
 
 The third selection dropdown, "Colour Proteins", controls the colouring of the protein representations. They range from the default "Uniform" grey colouring to colour schemes that change on a per-atom or per-residue basis such as "Element" or "Residue Name". Consequently, some colour schemes are only useful in conjunction with given representation styles e.g. the "Element" colour scheme works with "Ball+Stick" but has no effect in the "Cartoon" representation. A full list of NGL colour schemes can be found here --> [NGL Colour Schemes]("http://nglviewer.org/ngl/api/manual/coloring.html"). There is one XiView specific scheme - "Residues with Half-Links" - that highlights residues that form one end of a cross-link where the other end is out of scope of the PDB structure.
 
-A final drop-down menu, "Show", holds several options for setting various decorations on the protein structure, and some options for controlling how cross-links are superimposed upon the structure.
+Another drop-down menu, "Show", holds several options for setting various decorations on the protein structure, and some options for controlling how cross-links are superimposed upon the structure.
 
 For cross-links there are two independent options, we can:
 
@@ -62,6 +62,14 @@ The other available options under "Show" are
 * Show All Proteins - show proteins in multiple protein PDBs that aren't potentially involved in the current set of filtered cross-links. 
 * Show Distance Labels - displayed cross-links are annotated with a small label showing their length in Angstroms. These show up regardless for selected or highlighted cross-links.
 * Protein Chain Label Style - Long, Short, None, Fixed Size - a set of radio buttons for deciding the content of the label annotating each protein. Long for a verbose description which NGL pulls from the PDB file (plus the short description), short for a label with the protein name and chain index, and none to remove these labels altogether. A final checkbox, "Fixed Size", determines whether these labels stay a fixed size when the structure is zoomed in or out.
+
+Finally, the "Export" dropdown offers three options for exporting various parts of the PDB/cross-links combinations.
+
+* PDB & Cross-Links - Exports a basic copy of the PDB file (ATOM records only) with a number of LINK and CONECT files that represent cross-links that can be fully plotted within the structure. Since this is a PDB file, there is a limit of 100,000 atoms and structures with more than one model (NGL fuses PDBs by giving them different model indices) cannot have their inter-model cross-links successfully exported. This can be used in various molecule viewers but usually requires trial and error to figure out how to get the cross-links to appear in each one.
+
+* Pymol Command File - Exports a Pymol command file that will reload and render the cross-links in the Pymol viewer. This supports multiple PDB files and inter-model/PDB cross-links, but obviously is limited to Pymol only.
+
+* Haddock Distance Restraints File - for us with the [HADDOCK](https://haddock.science.uu.nl/services/HADDOCK2.2/) structure docker, this exports all the inter-model cross-links in a format compatible with the HADDOCK tool. These inter-model cross-links tend to be those we know exist between two pdb files, but since we cannot be sure of the PDB's relative orientation their distances are meaningless. However, HADDOCK can use their existence and restrictions based on cross-linker length to calculate the correct (or near to) orientation.
 
 There is one remaining button which sits by itself, "Download Image as PNG", which will download a PNG (bitmap format) file of the current state of the 3D view. A vector graphic format is not available for this view. The filename will include information on search id and current filter settings.
 
