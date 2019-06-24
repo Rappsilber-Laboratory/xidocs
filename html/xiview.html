@@ -12,15 +12,26 @@
 <body>
 <h2>Xi View</h2>
 <p>Xi View contains many different ways to view cross-link data, from circle plots, protein network views, protein sequence views and tables, to raw spectra and peak views. Data can be filtered and exported, as can images. PDB datasets can be incorporated to give physical context to the cross-links, enabling 3D and contact map views, with automatic alignment performed between Xi and PDB sequences.</p>
-<p>This documentation is divided into three logical sections:</p>
+<p>This documentation is divided into four logical sections:</p>
 <ol>
 <li>Filtering Data</li>
+<li>Importing MetaData</li>
 <li>Viewing Data</li>
 <li>Exporting Data</li>
 </ol>
 <h3>1. Filtering Data</h3>
 <p>One of the main benefits of XiView is the ability to filter the dataset based on various attributes. A description of the full set of the available attributes and operations can be found here on the <a href="./views/filterBar.html" title="Filter Bar">Filter Bar</a> page.</p>
-<h3>2. Viewing Data</h3>
+<h3>2. Importing MetaData</h3>
+<p>The dataset loaded from the history page can be augmented with the addition of metadata for the cross-links and proteins. This can be performed via the 'Load' menu in the top menu bar which offers six different methods for incorporating metadata:</p>
+<ol>
+<li><a href="./import/pdbdata.html" title="PDB Data">PDB Data</a> - Load PDB data to display crystal structures and to calculate distances.</li>
+<li><a href="./import/crosslinks.html" title="Cross-Links">Cross-Links (CSV)</a> - Add additional cross-links to the ones already present.</li>
+<li><a href="./import/crossmeta.html" title="Cross-Link Metadata">Cross-Link Metadata</a> - Add metadata to the existing cross-links.</li>
+<li>Protein Metadata - Add metadata to the existing proteins.</li>
+<li>User Annotations - Add annotation ranges and types for the proteins in the search if the Uniprot annotations are not sufficient or have not been picked up.</li>
+<li>GO Gene Annotation File - Add a Gene Ontology annotation file to help cluster large protein searches.</li>
+</ol>
+<h3>3. Viewing Data</h3>
 <p>There are a number of different views available for exploring cross-links within Xi View. One, the XiNet view, is a constant in the main window of xiView. The others are available via the &quot;View&quot; drop-down menu in the menu bar along the top of the window.</p>
 <p>The views themselves can be categorised as three basic types:</p>
 <ul>
@@ -65,7 +76,7 @@
 <p>The panels can also be resized by dragging their corners and repositioned by dragging their title bars.</p>
 <h4>Relation to Viewing Spectra</h4>
 <p>The <a href="./views/selectionTable.html" title="Selected Match Table">Selected Match Table</a> acts as the bridge to the underlying raw data displayed in the <a href="https://spectrumviewer.org/help.php" title="Spectrum View">Spectrum View</a> - open the xiSpec Feature Support section in this link for spectrum viewer use instructions. Selecting a match in this table will displaying the underlying raw data in the Spectrum View.</p>
-<h3>3. Exporting Data</h3>
+<h3>4. Exporting Data</h3>
 <p><img src="../img/export.png" alt="Export Dialog" /></p>
 <p>The Export menu in the top menu bar has a number of options for outputting the current filtered set of cross-links or matches.</p>
 <p>The first three offer the export in CSV format of various levels of information - cross-links, matches or residues. The Cross-Links export option will output a CSV containing the Cross-Link ID, position of the ends of the cross-link in terms of protein, peptide start position and position within the peptide. Other columns in the CSV will describe the number of matches, the highest score, and the validation status of the Cross-Link. If a PDB file has been loaded the distance and PDB co-ordinates of the link will be output if the Cross-Link has a valid distance. The shortest non-homomultimeric distance is chosen if multiple distances can be attached to the Cross-Link. Finally, for aggregated searches a column per search is present, indicating if the Cross-Link occurred in that particular search or not.</p>

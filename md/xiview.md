@@ -2,17 +2,30 @@
 
 Xi View contains many different ways to view cross-link data, from circle plots, protein network views, protein sequence views and tables, to raw spectra and peak views. Data can be filtered and exported, as can images. PDB datasets can be incorporated to give physical context to the cross-links, enabling 3D and contact map views, with automatic alignment performed between Xi and PDB sequences.
 
-This documentation is divided into three logical sections:
+This documentation is divided into four logical sections:
 
 1. Filtering Data
-2. Viewing Data
-3. Exporting Data
+2. Importing MetaData
+3. Viewing Data
+4. Exporting Data
 
 ### 1. Filtering Data ###
 
 One of the main benefits of XiView is the ability to filter the dataset based on various attributes. A description of the full set of the available attributes and operations can be found here on the [Filter Bar](./views/filterBar.html "Filter Bar") page.
 
-### 2. Viewing Data ###
+
+### 2. Importing MetaData ###
+
+The dataset loaded from the history page can be augmented with the addition of metadata for the cross-links and proteins. This can be performed via the 'Load' menu in the top menu bar which offers six different methods for incorporating metadata:
+
+1. 	[PDB Data](./import/pdbdata.html "PDB Data") - Load PDB data to display crystal structures and to calculate distances.
+1. 	[Cross-Links (CSV)](./import/crosslinks.html "Cross-Links") - Add additional cross-links to the ones already present.
+1. 	[Cross-Link Metadata](./import/crossmeta.html "Cross-Link Metadata") - Add metadata to the existing cross-links.
+1. 	Protein Metadata - Add metadata to the existing proteins.
+1. 	User Annotations - Add annotation ranges and types for the proteins in the search if the Uniprot annotations are not sufficient or have not been picked up.
+1. 	GO Gene Annotation File - Add a Gene Ontology annotation file to help cluster large protein searches.
+
+### 3. Viewing Data ###
 There are a number of different views available for exploring cross-links within Xi View. One, the XiNet view, is a constant in the main window of xiView. The others are available via the "View" drop-down menu in the menu bar along the top of the window.
 
 The views themselves can be categorised as three basic types:
@@ -52,7 +65,7 @@ The panels can also be resized by dragging their corners and repositioned by dra
 #### Relation to Viewing Spectra ####
 The [Selected Match Table](./views/selectionTable.html "Selected Match Table") acts as the bridge to the underlying raw data displayed in the [Spectrum View](https://spectrumviewer.org/help.php "Spectrum View") - open the xiSpec Feature Support section in this link for spectrum viewer use instructions. Selecting a match in this table will displaying the underlying raw data in the Spectrum View.
 
-### 3. Exporting Data ###
+### 4. Exporting Data ###
 
 ![Export Dialog](../img/export.png)
 
