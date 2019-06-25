@@ -11,7 +11,7 @@ This documentation is divided into four logical sections:
 
 ### 1. Filtering Data ###
 
-One of the main benefits of XiView is the ability to filter the dataset based on various attributes. A description of the full set of the available attributes and operations can be found here on the [Filter Bar](./views/filterBar.html "Filter Bar") page.
+One of the main benefits of XiView is the ability to filter the dataset based on various attributes. A description of the full set of the available attributes and operations can be found here on the [Filter Bar](./views/filterBar.html "Filter Bar") page. Changes to the filtered dataset are immediately reflected in all open views.
 
 
 ### 2. Importing MetaData ###
@@ -47,20 +47,7 @@ The views themselves can be categorised as three basic types:
 
 The [Legend View](./views/legend.html "Legend View") can be considered in a category of its own, its main function is to choose and refine a colour scheme used in the rest of the Xi View interface.
 
-#### Filtering ####
-All the positional and metadata views above reflect the current filter state, only showing cross-links / matches that pass the filter settings.
-
-#### Selection ####
-All the positional and meta-data views also support the idea of selecting / highlighting specific cross-links and matches, with selections and highlighting performed in one view reflected in other active views.
-
-#### Panel View Functionality ####
-The views shown within the panels have a number of functions available through the icons at the top of the panel frame. From left to right these are:
-1. Export an image (useful when the same option in the control panel has been hidden).
-2. Hide the view's control panel i.e. only show the visualisation.
-3. Maximise / restore the panel size.
-4. X - close the panel.
-
-The panels can also be resized by dragging their corners and repositioned by dragging their title bars.
+All views also share a number of [common operations and functionalities](./views/shared.html "Shared View Operations") such as filtering and selection.
 
 #### Relation to Viewing Spectra ####
 The [Selected Match Table](./views/selectionTable.html "Selected Match Table") acts as the bridge to the underlying raw data displayed in the [Spectrum View](https://spectrumviewer.org/help.php "Spectrum View") - open the xiSpec Feature Support section in this link for spectrum viewer use instructions. Selecting a match in this table will displaying the underlying raw data in the Spectrum View.

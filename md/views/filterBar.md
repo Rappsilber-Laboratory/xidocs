@@ -12,7 +12,7 @@ At the bottom of the xiView results visualisation page are a bar of controls for
 - Or
 	- FDR
 - Text (Match attributes)
-- PPI (Proteins Per Interaction)
+- PPI (Protein-Protein Interaction)
 - Groups
 
 Each subsection is collapsible / re-expandable by clicking on the name of the sub-section. This allows filters of interest to be viewed without being pushed off the edge of the display.
@@ -72,9 +72,13 @@ A number of text boxes that allow matches to be filtered based on the contents o
 
 - 'Scan' filters out matches whose 'Scan' attribute does not match the exact number entered here.
 
-- 'Residue Pairs per PPI' sets a threshold on the number of distinct matches between pairs of proteins that needs to be met before those matches are shown. This can be useful for quickly filtering out weakly interacting protein-protein pairs, and can tidy up the XiNet view in particular.
+### PPI ###
 
-- If multiple searches are being visualised together, the 'Groups' section will be visible. Within this are checkboxes for each of the search group numbers defined by the user back on the history page. Unchecking will remove all matches that belong to a particular search group.
+'Residue Pairs per PPI' (Protein-Protein Interaction) sets a threshold on the number of distinct matches between pairs of proteins that needs to be met before those matches are shown. This can be useful for quickly filtering out weakly interacting protein-protein pairs, and can tidy up the XiNet view in particular.
+
+### Groups ###
+
+If multiple searches are being visualised together, the 'Groups' section will be visible. Within this are checkboxes for each of the search group numbers defined by the user back on the history page. Unchecking will remove all matches that belong to a particular search group.
 
 ### Summary ###
 
