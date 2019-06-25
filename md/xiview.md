@@ -21,8 +21,8 @@ The dataset loaded from the history page can be augmented with the addition of m
 1. 	[PDB Data](./import/pdbdata.html "PDB Data") - Load PDB data to display crystal structures and to calculate distances.
 1. 	[Cross-Links (CSV)](./import/crosslinks.html "Cross-Links") - Add additional cross-links to the ones already present.
 1. 	[Cross-Link Metadata](./import/crossmeta.html "Cross-Link Metadata") - Add metadata to the existing cross-links.
-1. 	Protein Metadata - Add metadata to the existing proteins.
-1. 	User Annotations - Add annotation ranges and types for the proteins in the search if the Uniprot annotations are not sufficient or have not been picked up.
+1. 	[Protein Metadata](./import/proteinmeta.html "Protein Metadata") - Add metadata to the existing proteins.
+1. 	[User Annotations](./import/userannotations.html "User Annotations") - Add annotation ranges and types for the proteins in the search if the Uniprot annotations are not sufficient or have not been picked up.
 1. 	GO Gene Annotation File - Add a Gene Ontology annotation file to help cluster large protein searches.
 
 ### 3. Viewing Data ###

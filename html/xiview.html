@@ -4,9 +4,7 @@
 <title>xiview</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
-@import url("../../docs.css");
-@import url("../docs.css");
-@import url ("/xidocs/docs.css");
+@import url("/xidocs/docs.css");
 </style>
 </head>
 <body>
@@ -27,8 +25,8 @@
 <li><a href="./import/pdbdata.html" title="PDB Data">PDB Data</a> - Load PDB data to display crystal structures and to calculate distances.</li>
 <li><a href="./import/crosslinks.html" title="Cross-Links">Cross-Links (CSV)</a> - Add additional cross-links to the ones already present.</li>
 <li><a href="./import/crossmeta.html" title="Cross-Link Metadata">Cross-Link Metadata</a> - Add metadata to the existing cross-links.</li>
-<li>Protein Metadata - Add metadata to the existing proteins.</li>
-<li>User Annotations - Add annotation ranges and types for the proteins in the search if the Uniprot annotations are not sufficient or have not been picked up.</li>
+<li><a href="./import/proteinmeta.html" title="Protein Metadata">Protein Metadata</a> - Add metadata to the existing proteins.</li>
+<li><a href="./import/userannotations.html" title="User Annotations">User Annotations</a> - Add annotation ranges and types for the proteins in the search if the Uniprot annotations are not sufficient or have not been picked up.</li>
 <li>GO Gene Annotation File - Add a Gene Ontology annotation file to help cluster large protein searches.</li>
 </ol>
 <h3>3. Viewing Data</h3>
@@ -66,13 +64,11 @@
 <h4>Selection</h4>
 <p>All the positional and meta-data views also support the idea of selecting / highlighting specific cross-links and matches, with selections and highlighting performed in one view reflected in other active views.</p>
 <h4>Panel View Functionality</h4>
-<p>The views shown within the panels have a number of functions available through the icons at the top of the panel frame. From left to right these are:</p>
-<ol>
-<li>Export an image (useful when the same option in the control panel has been hidden).</li>
-<li>Hide the view's control panel i.e. only show the visualisation.</li>
-<li>Maximise / restore the panel size.</li>
-<li>X - close the panel.</li>
-</ol>
+<p>The views shown within the panels have a number of functions available through the icons at the top of the panel frame. From left to right these are:
+1. Export an image (useful when the same option in the control panel has been hidden).
+2. Hide the view's control panel i.e. only show the visualisation.
+3. Maximise / restore the panel size.
+4. X - close the panel.</p>
 <p>The panels can also be resized by dragging their corners and repositioned by dragging their title bars.</p>
 <h4>Relation to Viewing Spectra</h4>
 <p>The <a href="./views/selectionTable.html" title="Selected Match Table">Selected Match Table</a> acts as the bridge to the underlying raw data displayed in the <a href="https://spectrumviewer.org/help.php" title="Spectrum View">Spectrum View</a> - open the xiSpec Feature Support section in this link for spectrum viewer use instructions. Selecting a match in this table will displaying the underlying raw data in the Spectrum View.</p>

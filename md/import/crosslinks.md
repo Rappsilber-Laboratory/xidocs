@@ -4,15 +4,15 @@ The CSV File Chooser dialog will ask for up to two files that are needed to load
 
 Compulsory columns are:
 
-- Protein1 - The name/ID of the protein at the start of the cross-link
+- Protein1 - The ID of the protein at the start of the cross-link
 - SeqPos1 or LinkPos1 or AbsPos1 or fromSite - The position in the protein sequence of the start of the cross-link
-- Protein2 - The name/ID of the protein at the end of the cross-link
+- Protein2 - The ID of the protein at the end of the cross-link
 - SeqPos2 or LinkPos2 or AbsPos2 or ToSite - The position in the protein sequence of the end of the cross-link
 
 Other columns such as RunName, ScanNumber, Charge, CalcMass, PepSeq1, PepSeq2 and Score can be added for more information on each cross-link
 
 
-If Protein1 and Protein2 contain Uniprot accession IDs either as a whole or as a part (typically the 2nd part in a string divided by '|' characters) then sequences can be gathered from Uniprot. Otherwise a second file, a FASTA file, has to be selected too, with the FASTA ids matching the Protein1 and 2 fields in the CSV file.
+If Protein1 and Protein2 are SwissProt format IDs (sp|Accession|Name) then sequences can be gathered from Uniprot. Otherwise a second file, a FASTA file, has to be selected too, with the FASTA ids matching the Protein1 and 2 fields in the CSV file.
 
 
 Example CSV File format:
