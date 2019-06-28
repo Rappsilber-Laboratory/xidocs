@@ -14,7 +14,7 @@ The Matches export option performs a similar function to matches. Extra columns 
 
 The PPI export produces a three column CSV file where the rows consist of all combinations of protein pairings that have one or more filtered crosslinks. The first two columns are the proteins and the third column the number of filtered crosslinks between them.
 
-The Residues export option outputs a much simpler csv file indicate how many times certain residues (AAs) turn up in the cross-link data set and how often each pairing of residue occurs. This is useful for confirming that cross-links only go between given residues.
+The Residues export option outputs a much simpler CSV file indicating how many times certain residues (AAs) turn up in the cross-link data set and how often each pairing of residue occurs. This is useful for confirming that cross-links only go between given residues.
 
 The simplest of all is the Protein Accession List export, which produces a single row CSV file of currently visible proteins' accession numbers, separated by commas.
 
