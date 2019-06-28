@@ -1,6 +1,6 @@
 ## CSV Export ##
 
-The export menu offers the ability to export four types of information in CSV (Comma Separated Value) format:
+The export menu offers the ability to export five types of information in CSV (Comma Separated Value) format:
 
 1. Filtered Cross-Links
 1. Filtered Matches
