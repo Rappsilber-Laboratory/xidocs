@@ -6,6 +6,7 @@
 <style type="text/css">
 @import url("../../docs.css");
 @import url("../docs.css");
+@import url ("/xidocs/docs.css");
 </style>
 </head>
 <body>
@@ -49,6 +50,7 @@
 <li>Ms Tolerance</li>
 <li>Ms2 Tolerance</li>
 <li>Missed Cleavages</li>
+<li>Missing Mono-Isotopic Peaks</li>
 <li>Fixed Modifications</li>
 <li>Variable Modifications</li>
 <li>Ions</li>
@@ -62,7 +64,8 @@
 <li>Alternatively, press the &quot;Construct Sequential Digestion&quot; button in the dropdown to make a digestion composed of more than one enzyme. Here, add new steps with the &quot;Add New Digestion Step&quot; button and then choose the enzyme for that step through a drop-down. Set local Missed Cleavages settings by checking the &quot;Local MC&quot; checkbox for the step and entering a value in the revealed number input - if unset, that step will use the global Missed Cleavages setting. Steps can be deleted (if more than one) by pressing the button marked with an 'X', and reordered by dragging the 'double-arrow' icons. &quot;Revert to Single Enzyme Choice&quot; will return to the single enzyme selection state.</li>
 </ul>
 <p><em>Ms Tolerance</em> and <em>Ms2 Tolerance</em> are numeric inputs and also have a choice of units (parts per million or Daltons).</p>
-<p><em>Missed cleavages</em> is a numeric input with no units.</p>
+<p><em>Missed cleavages</em> is a numeric input with no units and a default value of 4.</p>
+<p><em>Missing Mono-Isotopic Peaks</em> is a numeric input with no units and a default value of 2.</p>
 <p><em>Fixed Modifications</em>, <em>Variable Modifications</em>, <em>Ions</em> and <em>Losses</em> are all parameters for which multiple choices can be made. Select as many options as the search requires using the checkboxes in each parameters' drop-down menu. <em>Ions</em> has the extra restriction that at least one of the options must be chosen.</p>
 <p><em>Search Notes</em> can be used to add more information about the search, useful as a memory aid for later. The <em>Custom Settings</em> textbox is really only used by the Xi Database Admin to set custom flags to a search, and not intended for general use.</p>
 <p>To reduce user input fatigue a set of sensible defaults are displayed, so you only need to change the ones that are unsuitable for your new search. These defaults can be restored using the <em>Use Default Parameters</em> button. The parameters from your last search can be reapplied using the <em>Use Your Last Search Params</em> button.</p>

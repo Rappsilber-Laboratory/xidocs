@@ -8,8 +8,12 @@ html {
 	columns: 25em 3;
 	column-rule: 1px solid #ccc;
 	column-gap: 2em;
-	column-fill: balance;
+	column-fill: auto;
 	background: #eee;
+    box-sizing: border-box;
+    height: calc(100% - 16px - 1em);
+    widows: 2;
+    orphans: 2;
 }
 
 html::before {

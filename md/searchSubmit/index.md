@@ -47,6 +47,7 @@ This step involves setting the following parameters for the new search:
 * Ms Tolerance
 * Ms2 Tolerance
 * Missed Cleavages
+* Missing Mono-Isotopic Peaks
 * Fixed Modifications
 * Variable Modifications
 * Ions
@@ -63,7 +64,9 @@ This step involves setting the following parameters for the new search:
 
 *Ms Tolerance* and *Ms2 Tolerance* are numeric inputs and also have a choice of units (parts per million or Daltons).
 
-*Missed cleavages* is a numeric input with no units.
+*Missed cleavages* is a numeric input with no units and a default value of 4.
+
+*Missing Mono-Isotopic Peaks* is a numeric input with no units and a default value of 2.
 
 *Fixed Modifications*, *Variable Modifications*, *Ions* and *Losses* are all parameters for which multiple choices can be made. Select as many options as the search requires using the checkboxes in each parameters' drop-down menu. *Ions* has the extra restriction that at least one of the options must be chosen.
 
