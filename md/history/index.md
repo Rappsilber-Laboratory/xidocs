@@ -15,7 +15,7 @@ Sorting can be performed on those columns with an arrow icon next to the filter 
 
 These controls can be used together to find searches of interest, though generally the filtering is the most useful.
 
-The *Keep* control in the title bar, if checked, will keep the current filtering and sorting settings for when the history page is next accessed on the same computer.
+The *Keep Settings* control in the title bar, if checked, will keep the current filtering, ordering and column visibility settings for when the history page is next accessed on the same computer.
 
 ### Visualise a Single Search ###
 Links in the first two columns - *Visualise Search* and *+FDR* - launch the [Xi Visualisation](../../html/xiview.html). The first column's link only loads auto-validated crosslinks into the visualisation. The second column's link (*+FDR*) also loads decoy and unvalidated crosslinks, which allows basic FDR (False Discovery Rate) calculations to be used as a filter within the visualisation.
