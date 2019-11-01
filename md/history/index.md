@@ -15,13 +15,13 @@ Sorting can be performed on those columns with an arrow icon next to the filter 
 
 These controls can be used together to find searches of interest, though generally the filtering is the most useful.
 
-The *Keep* control in the title bar, if checked, will keep the current filtering and sorting settings for when the history page is next accessed on the same computer.
+The *Keep Settings* control in the title bar, if checked, will keep the current filtering, ordering and column visibility settings for when the history page is next accessed on the same computer.
 
 ### Visualise a Single Search ###
-Links in the first two columns - *Visualise Search* and *+FDR* - launch the [Xi Visualisation](../../html/xi3/index.html). The first column's link only loads auto-validated crosslinks into the visualisation. The second column's link (*+FDR*) also loads decoy and unvalidated crosslinks, which allows basic FDR (False Discovery Rate) calculations to be used as a filter within the visualisation.
+Links in the first two columns - *Visualise Search* and *+FDR* - launch the [Xi Visualisation](../../html/xiview.html). The first column's link only loads auto-validated crosslinks into the visualisation. The second column's link (*+FDR*) also loads decoy and unvalidated crosslinks, which allows basic FDR (False Discovery Rate) calculations to be used as a filter within the visualisation.
 
 ### Visualise Aggregated Searches ###
-Aggregate multiple searches for visualisation using the number input widgets in the *Agg Group* column. Enter a number for each search that should be aggregated. **Number Meaning**:  Searches marked with the same number will be coloured the same in the resulting visualisation - so enter the same number if you want searches to be indistinguishable, and enter different numbers for searches you wish to differentiate visually.
+Aggregate multiple searches for visualisation using the number input widgets in the *Agg Group* column. Enter a number for each search that should be aggregated. **Number Meaning**:  Groups of searches marked with different numbers will be distinguishable from each other in the resulting visualisation through two mechanisms. Firstly, the group colouring scheme will colour crosslinks according to which search group their matches (filtered) are in; crosslinks that are composed of filtered matches from more than one group will be coloured neutrally. Secondly, the filter bar will contain options to hide all matches from each group. 
 
 Press the *Aggregate* button in the title bar to view the aggregated searches with auto-validated links only. Press the *Agg. For FDR* button to include decoy and unvalidated links so an FDR filtering can be performed in the visualisation (exactly as for the single search).
 

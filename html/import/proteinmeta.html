@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>proteinmeta</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+@import url("/xidocs/docs.css");
+</style>
+</head>
+<body>
+<h2>Importing Protein Metadata from a CSV File</h2>
+<p>This feature presents a dialog with just two options - firstly, to load a CSV file to import metadata onto existing proteins, and secondly, a display of the format of CSV file the dialog expects in the first case.</p>
+<p>The first option will allow the user to select a file and load it, and the dialog will then report on the success of merging the CSV file with the existing proteins: how many proteins have been affected and have many columns (attributes) of metadata were loaded for them. </p>
+<p>The expected CSV format is revealed in the &quot;Expected CSV format&quot; accordion. Basically, the CSV parser here is looking for a ProteinID column containing the SwissProt format (sp|Accession|Name) as a descriptor. Every other column in the CSV file is regarded as metadata and are parsed and added as new or overwriting metadata attributes (name taken from the header row) to the relevant proteins. Each column is expected to be either numeric in value or a hexadecimal colour format. The column &quot;Name&quot; is treated as a special case and will change the displayed name of the protein. </p>
+<p>A simple example of such a CSV file is given here:</p>
+<pre><code>ProteinID,Name,Quantification
+Sp|P02768-A|ALBU_HUMAN,A Human protein,423
+</code></pre>
+
+<p>Here, Name and Quantification are metadata columns. Quantification is numeric and Name is a special case that replaces the current protein name.</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

@@ -5,4 +5,5 @@ Xi Documentation is currently written to cover several parts of the overall Xi U
 - [User Login System](./userGUI/index.html)
 - [New Search Submission](./searchSubmit/index.html)
 - [Search History](./history/index.html)
+- [Xi Visualisation Tool](./xiview.html)
 
