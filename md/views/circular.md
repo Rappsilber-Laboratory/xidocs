@@ -4,7 +4,7 @@
 
 ### Representation ###
 
-This view uses a version of the popular Circos layout to display the Cross-Links. Proteins are arranged around the circumference of the circle as thick arcs relative to their length, and cross-links are shown as curves connecting proteins at the appropriate positions. Where possible proteins are labelled with their names, though for displays showing many proteins this is not always possible, especially for shorter proteins.
+This view uses a Circos-like layout to display the Cross-Links. Proteins are arranged around the circumference of the circle as thick arcs of lengths proportional to protein size, and cross-links are shown as curves connecting proteins at the appropriate positions. Where possible proteins are labelled with their names, though for displays showing many proteins this is not always possible, especially for shorter proteins.
 
 ### Direct Interaction ###
 
@@ -13,6 +13,8 @@ Like the other views in Xi View, individual cross-links can be highlighted by mo
 Highlighting and selecting can also be performed on the protein representations. Here, selecting a protein will also select all the cross-links that connect to it. Again, in conjunction with the CTRL key, multiple proteins can be selected and deselected.
 
 Clicking with the left mouse button on the background of the view will clear all selections.
+
+Manual ordering of multiple proteins can be performed by left-clicking on a protein representation and dragging to a new position around the circumference of the circle.
 
 
 ### Options ###
@@ -27,9 +29,8 @@ The second drop-down menu, "Show", toggles on and off a set of visual preference
 2. Residue Labels (If Few Links) - if only a small number of cross-links are currently displayed (around 20) then the amino acid letters can be shown at the ends of the cross-links.
 3. Self-Links on Outside - self links can be moved to the outside of the protein circle, leaving only between links in the interior of the circle.
 4. Links With Overlapping Peptides Opposite To Self Links - a.k.a. homomultimers... whichever side (in/out) self-links are displayed on, checking this setting will show homomultimeric cross-links on the other side.
+5. Selected Cross-Links Only - only show currently selected cross-links in this view.
 
-There is one remaining button which sits by itself, "Download Image as SVG", which will download an SVG (vector format) file of the current state of the circular view. The filename will include information on search id and current filter settings.
-
-Lastly, like the other views that sit in sub-panels, the circular view can be resized by clicking on and dragging its corners, and repositioned by clicking on and dragging the title bar. The view can be closed using the X button next to the top right-hand corner.
+Finally, there is one remaining button which sits by itself, "Download Image as SVG", which will download an SVG (vector format) file of the current state of the circular view. The filename will include information on search id and current filter settings.
 
 

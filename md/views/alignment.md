@@ -36,8 +36,6 @@ Beneath the section that displays the current protein's sequence information is 
 Resulting elided sections of the sequences are replaced with a sequence of quotation marks, whose length is logarithmically related to the length of the elided section, e.g. "" represents 10-100 elided residues.
 
 At the bottom of the panel are three controls for tweaking the Gotoh alignment algorithm. Both the "Gap Open Penalty" and the "Gap Extend Penalty" quantities can be changed, along with the Blosum matrix type the alignment scoring is derived from. These changes are local to the protein currently under examination in this view.
- 
-Lastly, like the other views that sit in sub-panels, this view can be resized by clicking on and dragging its corners, and repositioned by clicking on and dragging the title bar. The view can be closed using the X button next to the top right-hand corner.
 
 
 

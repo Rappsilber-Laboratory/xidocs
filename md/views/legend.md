@@ -18,7 +18,7 @@ Other colour schemes become available when loading cross-link metadata. Each non
 
 Once selected, the details of a colour scheme appear underneath the dropdown in the section marked "Current Cross-Link Colour Scheme". Within this is a small table of colours and a description of what values/categories of cross-link they represent. Generally, these colours are editable - clicking on the small coloured swatch in the Colour column will bring up a widget to change the colour for that category/value, and this change will be seen in any active Xi views. Some colour schemes are uneditable - those that have a specific colour set for each cross-link, though none of the default colour schemes come under this category.
 
-Underneath this section is a button, "Download This Colour Scheme as SVG", which saves the colour scheme as a legend in a vector format (SVG) that can be used to complement previously downloaded figures - as long as they use the same colour scheme.
+Underneath this section is a button, "Download This Colour Scheme as SVG", which saves the colour scheme as a legend in a vector format (SVG) that can be used to complement previously downloaded figures - as long as they use the same colour scheme. However, most views now include the colour key automatically in their figure exports.
 
 The last part of the view consists of a section headed "View Legends" that includes a set of expandable/collapsible tables, each of which contain the legend for a particular view. These legends are deliberately mainly monochromatic - mostly the colouring will be decided by the colour scheme selection above - these sections rather describe the style of marks used to represent cross-links and other elements within each view.
 

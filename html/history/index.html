@@ -5,6 +5,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
 @import url("../../docs.css");
+@import url("../docs.css");
+@import url ("/xidocs/docs.css");
 </style>
 </head>
 <body>
@@ -18,11 +20,11 @@
 <p>Filtering is performed by entering text in the text fields below the table headers. Filters in different columns are applied conjunctively, i.e. a search must satisfy all filters to be shown. An individual filter can contain several terms; again these are applied conjunctively e.g. &quot;lum bs3&quot; in the Visualise Search column will only match searches with both &quot;lum&quot; and &quot;bs3&quot; in their names.</p>
 <p>Sorting can be performed on those columns with an arrow icon next to the filter text field. The default sort is by date.</p>
 <p>These controls can be used together to find searches of interest, though generally the filtering is the most useful.</p>
-<p>The <em>Keep</em> control in the title bar, if checked, will keep the current filtering and sorting settings for when the history page is next accessed on the same computer.</p>
+<p>The <em>Keep Settings</em> control in the title bar, if checked, will keep the current filtering, ordering and column visibility settings for when the history page is next accessed on the same computer.</p>
 <h3>Visualise a Single Search</h3>
-<p>Links in the first two columns - <em>Visualise Search</em> and <em>+FDR</em> - launch the <a href="../../html/xi3/index.html">Xi Visualisation</a>. The first column's link only loads auto-validated crosslinks into the visualisation. The second column's link (<em>+FDR</em>) also loads decoy and unvalidated crosslinks, which allows basic FDR (False Discovery Rate) calculations to be used as a filter within the visualisation.</p>
+<p>Links in the first two columns - <em>Visualise Search</em> and <em>+FDR</em> - launch the <a href="../../html/xiview.html">Xi Visualisation</a>. The first column's link only loads auto-validated crosslinks into the visualisation. The second column's link (<em>+FDR</em>) also loads decoy and unvalidated crosslinks, which allows basic FDR (False Discovery Rate) calculations to be used as a filter within the visualisation.</p>
 <h3>Visualise Aggregated Searches</h3>
-<p>Aggregate multiple searches for visualisation using the number input widgets in the <em>Agg Group</em> column. Enter a number for each search that should be aggregated. <strong>Number Meaning</strong>:  Searches marked with the same number will be coloured the same in the resulting visualisation - so enter the same number if you want searches to be indistinguishable, and enter different numbers for searches you wish to differentiate visually.</p>
+<p>Aggregate multiple searches for visualisation using the number input widgets in the <em>Agg Group</em> column. Enter a number for each search that should be aggregated. <strong>Number Meaning</strong>:  Groups of searches marked with different numbers will be distinguishable from each other in the resulting visualisation through two mechanisms. Firstly, the group colouring scheme will colour crosslinks according to which search group their matches (filtered) are in; crosslinks that are composed of filtered matches from more than one group will be coloured neutrally. Secondly, the filter bar will contain options to hide all matches from each group.</p>
 <p>Press the <em>Aggregate</em> button in the title bar to view the aggregated searches with auto-validated links only. Press the <em>Agg. For FDR</em> button to include decoy and unvalidated links so an FDR filtering can be performed in the visualisation (exactly as for the single search).</p>
 <h3>Validate a Search</h3>
 <p>Click the underlined 'Validate' text in the <em>Validation</em> column to show a selection dialog for a particular search. This dialog has options to validate various combinations of cross-links - including linear peptides and/or decoy proteins. Selecting an option will then take you to the search's validation page and populate it with the requested cross-links.</p>

@@ -8,12 +8,16 @@ html {
 	columns: 25em 3;
 	column-rule: 1px solid #ccc;
 	column-gap: 2em;
-	column-fill: balance;
+	column-fill: auto;
 	background: #eee;
+    box-sizing: border-box;
+    height: calc(100% - 16px - 1em);
+    widows: 2;
+    orphans: 2;
 }
 
 html::before {
-    content: "Xi Docs, © Rappsilber Lab 2018";
+    content: "Xi Docs, © Rappsilber Lab 2019";
     float: right;
 	top: -0.5em;
 	position: relative;
@@ -48,6 +52,15 @@ img {
     box-shadow: 6px 6px 5px #bbb;
 	margin-bottom: 3em;
 	padding-bottom: 0;
+	transform: scale(1);
+	transition: transform 2s;
+    transform-origin: left;
+}
+
+img:hover {
+	will-change: transform;
+	transform: scale(2);
+    /*transform-origin: left;*/
 }
 
 p {

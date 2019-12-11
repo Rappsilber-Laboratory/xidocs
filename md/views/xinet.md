@@ -41,7 +41,9 @@ Firstly, the "Drag To Pan Or Select" radio button pair controls whether left-cli
 
 The "Layout" portion of the menu allows the Saving and Loading of multiple layout configurations for each search - a time-saver in not needing to re-create preferred manual layouts from scratch. The "Auto" button will relayout the entire network using a built in layout algorithm from the cola.js layout library.
 
-Finally, the "Image as SVG" button will download an SVG (vector format) file of the current state of the XiNet view. The filename will include information on search id and current filter settings.
+The "Download Image as SVG" button will download an SVG (vector format) file of the current state of the XiNet view. The filename will include information on search id and current filter settings.
+
+Finally, the "Labels" checkbox turns off protein labels, often useful for large networks where a multitude of labels can obscure each other and other information.
 
 
 ### Reference ###
