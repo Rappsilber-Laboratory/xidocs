@@ -8,6 +8,8 @@ Once a file has been selected or a valid selection of PDB identifiers has been e
 
 If sequences have been aligned successfully they can be inspected in the [Alignment View](../views/alignment.html). Also the [3D (NGL)](../views/3dngl.html) option in the View menu will now be enabled, and distance information will be available to plot in the [Histogram](../views/histogram.html) and [Scatterplot](../views/scatterplot.html) views.
 
+If loading multiple PDB codes it is important to note that they will combined into one structure in the NGL viewer, but separated as different PDB models. To view possible crosslinks between the models will need the 'inter-model distances' option to be checked in the 3D view.
+
 If you are unsure which PDB is best suited for the current search there are a couple of options available as buttons which launch external web queries:
 
 1. Show PDBs matching Uniprot Accessions @ RCSB.Org
