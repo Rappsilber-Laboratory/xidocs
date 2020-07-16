@@ -15,6 +15,7 @@
 <p>The PDB File Chooser is a dialog that offers the opportunity to load in PDB structures either from a local PDB file or by using one or more PDB codes to download structures from the RCSB Protein Data Bank.</p>
 <p>Once a file has been selected or a valid selection of PDB identifiers has been entered, the tool will, via NGL, load these structures and report back on how many sequences it has managed to align between the current search and the sequences in the PDBs. Alignment is performed automatically so discrepancies between search and PDB sequences are accounted for.</p>
 <p>If sequences have been aligned successfully they can be inspected in the <a href="../views/alignment.html">Alignment View</a>. Also the <a href="../views/3dngl.html">3D (NGL)</a> option in the View menu will now be enabled, and distance information will be available to plot in the <a href="../views/histogram.html">Histogram</a> and <a href="../views/scatterplot.html">Scatterplot</a> views.</p>
+<p>If loading multiple PDB codes it is important to note that they will combined into one structure in the NGL viewer, but separated as different PDB models. To view possible crosslinks between the models will need the 'inter-model distances' option to be checked in the 3D view.</p>
 <p>If you are unsure which PDB is best suited for the current search there are a couple of options available as buttons which launch external web queries:</p>
 <ol>
 <li>Show PDBs matching Uniprot Accessions @ RCSB.Org</li>

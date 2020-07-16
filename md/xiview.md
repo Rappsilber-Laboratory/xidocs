@@ -1,8 +1,12 @@
 ## Xi View ##
 
+(?After uploading data at the upload page it appears in your "My Data" index page, selecting it there takes you to the xiView results page...)
+
 Xi View contains many different ways to view cross-link data, from circle plots, protein network views, protein sequence views and tables, to raw spectra and peak views. Data can be filtered and exported, as can images. PDB datasets can be incorporated to give physical context to the cross-links, enabling 3D and contact map views, with automatic alignment performed between Xi and PDB sequences.
 
-This documentation is divided into four logical sections:
+(Overview of page? - menu's that affect all views; display area; selection table; filter bar)
+
+This documentation is divided into three logical sections:
 
 1. Filtering Data
 2. Importing MetaData
@@ -11,6 +15,13 @@ This documentation is divided into four logical sections:
 
 ### 1. Filtering Data ###
 
+<<<<<<< HEAD
+### 1. Filtering Data ###
+
+At the bottom of the screen is a [bar for filtering] (./views/xinet.html "Filter Bar") the data.
+
+### 2. Viewing Data ###
+=======
 One of the main benefits of XiView is the ability to filter the dataset based on various attributes. A description of the full set of the available attributes and operations can be found here on the [Filter Bar](./views/filterBar.html "Filter Bar") page. Changes to the filtered dataset are immediately reflected in all open views.
 
 
@@ -25,6 +36,7 @@ The dataset loaded from the history page can be augmented with the addition of m
 1. 	[User Annotations](./import/userannotations.html "User Annotations") - Add annotation ranges and types for the proteins in the search if the Uniprot annotations are not sufficient or have not been picked up.
 
 ### 3. Viewing Data ###
+>>>>>>> f0c9d29434d0a999cc33bf1b4eebe4f3db3c4d23
 There are a number of different views available for exploring cross-links within Xi View. One, the XiNet view, is a constant in the main window of xiView. The others are available via the "View" drop-down menu in the menu bar along the top of the window.
 
 The views themselves can be categorised as three basic types:
@@ -36,7 +48,7 @@ The views themselves can be categorised as three basic types:
 	4. [3D NGL View](./views/3dngl.html "3D View")
 	5. [Protein Info View](./views/proteinInfo.html "Protein Info View")
 
-* Those that show cross-link metadata:
+* Those that show cross-link and match metadata:
 	1. [Histogram View](./views/histogram.html "Histogram View")
 	2. [Scatterplot View](./views/scatterplot.html "Scatterplot View")
 
@@ -57,7 +69,12 @@ The [Selected Match Table](./views/selectionTable.html "Selected Match Table") a
 
 The Export menu in the top menu bar has a number of options for outputting various aspects of the current filtered dataset. Simply click the required option and the exported file will be downloaded to your computer.
 
+The final option "Make Filtered Xi URL" offers the option to export a URL that includes the current filter state. Upon re-opening in a browser this URL will set the filter to the values in the URL as a convenient shortcut.
+
+Finally, almost every view has the option to save their current representation as a SVG file, which again includes a timestamp and filter state within the filename.
+=======
 Filtered cross-links, matches, protein-protein interactions, residue pairs and protein accession numbers [can all be saved as CSV files](./export/csv.html), and filtered matches can also be saved in Skyline's SSL format. The final option "Make Filtered Xi URL" offers the option to export a URL that includes the current filter state. Upon re-opening in a browser this URL will set the filter to the values in the URL as a convenient shortcut.
 
 #### Exporting Images ####
 Finally, almost every view has the option to save their current representation as a SVG or PNG file, which again includes a timestamp and filter state within the filename. Most of the exported images also include a colour key, and most views generate SVG images that include a link to return to the search.
+>>>>>>> f0c9d29434d0a999cc33bf1b4eebe4f3db3c4d23

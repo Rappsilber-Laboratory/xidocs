@@ -60,7 +60,7 @@ When the FDR mode is selected, this sub-bar allows a basic link-level FDR thresh
 
 A number of text boxes that allow matches to be filtered based on the contents of some of their attributes.
 
-- 'Peptide' filters to matches that include the entered text string as part of either of the linked peptide sequences, e.g. 'FAKR' would filter to matches where one of the linked peptides includes the subsequence FAKR. Separating two strings with a hyphen will filter to matches where one peptide includes one subsequence and the second one the other, e.g. 'FAKR-KK' will filter to matches where FAKR is in one peptide and KK in the other. 
+- 'Peptide' filters to matches that include the entered text string as part of either of the linked peptide sequences, e.g. 'FAKR' would filter to matches where one of the linked peptides includes the subsequence FAKR. Separating two strings with a hyphen will filter to matches where one peptide includes one subsequence and the second one the other, e.g. 'FAKR-KK' will filter to matches where FAKR is in one peptide and KK in the other.
 
 - 'Protein' takes in a comma separated list of values that are text matched against protein descriptions and names. Matches that don't link such proteins are filtered out. A hyphen can be used to specify matches that link two particular proteins or sets of proteins. E.g., "ALBU" would show matches that involve a protein containing the text 'ALBU' in its name or description such as ALBU-HUMAN. "BOVINE-CHICK" would filter to all matches that connect proteins where one protein contains 'BOVINE' and the other 'CHICK'. "ALBU, BOVINE-CHICK" would additively combine the previous two scenarios.
 

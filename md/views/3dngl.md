@@ -50,7 +50,7 @@ The third selection dropdown, "Colour Proteins", controls the colouring of the p
 
 Another drop-down menu, "Show", holds several options for setting various decorations on the protein structure, and some options for controlling how cross-links are superimposed upon the structure.
 
-For cross-links there are two independent options, we can:
+For cross-links there are three independent options, we can:
 
 1. Show selected cross-links only - this reduces clutter and selected cross-links aren't obscured by unselected cross-links, which is particularly noticeable in 3D.
 2. Show shortest possible cross-links only - in PDB structures with multiple copies of a protein, there are multiple places a cross-link could be positioned. E.g. in a dimer structure (protein copies A and B) a cross-link between positions 1 and 2 could have four possible solutions, A1-A2, A1-B2, B1-A2 or B1-B2. This setting, selected by default, tells the view to show only the shortest possible cross-link out of these possibilities.
