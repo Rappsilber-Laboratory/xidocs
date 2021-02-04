@@ -1,14 +1,21 @@
 ## Importing Protein Metadata from a CSV File ##
 
-This feature presents a dialog with just two options - firstly, to load a CSV file to import metadata onto existing proteins, and secondly, a display of the format of CSV file the dialog expects in the first case.
-
-The first option will allow the user to select a file and load it, and the dialog will then report on the success of merging the CSV file with the existing proteins: how many proteins have been affected and have many columns (attributes) of metadata were loaded for them. 
-
-The expected CSV format is revealed in the "Expected CSV format" accordion. Basically, the CSV parser here is looking for a ProteinID column containing the SwissProt format (sp|Accession|Name) as a descriptor. Every other column in the CSV file is regarded as metadata and are parsed and added as new or overwriting metadata attributes (name taken from the header row) to the relevant proteins. Each column is expected to be either numeric in value or a hexadecimal colour format. The column "Name" is treated as a special case and will change the displayed name of the protein. 
+Imported protein metadata can be used to colour the protein via 'View' > 'Legend & Colours'
 
 A simple example of such a CSV file is given here:
 
-    ProteinID,Name,Quantification
-    Sp|P02768-A|ALBU_HUMAN,A Human protein,423
+    ProteinID,Name,Quantification,Complex
+    P02768,A Human protein,423,ribosome
 
-Here, Name and Quantification are metadata columns. Quantification is numeric and Name is a special case that replaces the current protein name.
+The columns 'Name' and 'Complex' are special cases.
+
+'Name' changes the name of the protein with that ID,
+if you save the layout the changed names are also saved in that layout.
+
+'Complex' places the protein in a group with that name,
+groups are also saved in the layout.
+
+All other metadata columns are treated as follows:
+- if they contain only hex colour values the protein is given that colour;
+- if they contain only numerical values they are given a threshold scale with a range slider,
+- anything else is assignd a categorical colout scheme based on the contents of thre column.
