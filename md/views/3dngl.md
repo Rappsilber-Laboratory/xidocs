@@ -69,9 +69,19 @@ Finally, the "Export" dropdown offers three options for exporting various parts 
 
 * Pymol Command File - Exports a Pymol command file that will reload and render the cross-links in the Pymol viewer. This supports multiple PDB files and inter-model/PDB cross-links, but obviously is limited to Pymol only.
 
-* Haddock Distance Restraints File - for use with the [HADDOCK](https://haddock.science.uu.nl/services/HADDOCK2.2/) structure docker, this exports all the inter-model cross-links in a format compatible with the HADDOCK tool. These inter-model cross-links tend to be those we know exist between two pdb files, but since we cannot be sure of the PDB's relative orientation their distances are meaningless. However, HADDOCK can use their existence and restrictions based on cross-linker length to calculate the correct (or near to) orientation.
+* Haddock Distance Restraints File (not definitive)- for use with the [HADDOCK](https://haddock.science.uu.nl/services/HADDOCK2.2/) structure docker, this exports all the inter-model cross-links in a format compatible with the HADDOCK tool. These inter-model cross-links tend to be those we know exist between two pdb files, but since we cannot be sure of the PDB's relative orientation their distances are meaningless. However, HADDOCK can use their existence and restrictions based on cross-linker length to calculate the correct (or near to) orientation.
+* csv export file - a plain csv file with crosslinks according to the residue numbering and Chain IDs of the pdb file
+* Chimerax Pseudobonds file - for visualizing crosslinks in [UCSF ChimeraX ] (https://www.rbvi.ucsf.edu/chimerax/)
+* Jwalk - for calculating solvent-accessible surface distance on the [Jwalk] webserver (http://jwalk.ismb.lon.ac.uk/jwalk/)
 
 There is one remaining button which sits by itself, "Download Image as PNG", which will download a PNG (bitmap format) file of the current state of the 3D view. A vector graphic format is not available for this view. The filename will include information on search id and current filter settings.
+
+
+### Using the exported files ###
+* Pymol Command File - Place the pymol command file (.pml) in the same folder as the .pdb file you are analysing. If you have downloaded coordinates using a pdb code, then this can be anywhere in your computer, as the command file will instruct pymol to download the coordinates again. Open pymol, and from within pymol, open the command file - this will load the structure and the links. Often, it is preferable to then type the command "set dash_gap, 0" and then "set dash_width, 5", to make the crosslinks solid and more visible
+* Haddock Distance Restraints File - this file can be used as ambiguous restraints in HADDOCK to dock multiple proteins together. Currently, this only works if each pdb file loaded into NGL viewer is made of a single chain. To obtain tables to dock protein complexes, each pdb file has to be formatted as a single chain, with non-overlapping residue numbering. 
+* Chimerax pseudobond file - The file has to have the .pb extension. Open the structure in chimerax, then in the command line of the program type open filename.pb . The crosslinks will then be rendered on the structure.
+
 
 ### References ###
 
