@@ -70,9 +70,9 @@ Finally, the "Export" dropdown offers three options for exporting various parts 
 * Pymol Command File - Exports a Pymol command file that will reload and render the cross-links in the Pymol viewer. This supports multiple PDB files and inter-model/PDB cross-links, but obviously is limited to Pymol only.
 
 * Haddock Distance Restraints File (not definitive)- for use with the [HADDOCK](https://haddock.science.uu.nl/services/HADDOCK2.2/) structure docker, this exports all the inter-model cross-links in a format compatible with the HADDOCK tool. These inter-model cross-links tend to be those we know exist between two pdb files, but since we cannot be sure of the PDB's relative orientation their distances are meaningless. However, HADDOCK can use their existence and restrictions based on cross-linker length to calculate the correct (or near to) orientation.
-* csv export file - a plain csv file with crosslinks according to the residue numbering and Chain IDs of the pdb file
-* Chimerax Pseudobonds file - for visualizing crosslinks in [UCSF ChimeraX ] (https://www.rbvi.ucsf.edu/chimerax/)
-* Jwalk - for calculating solvent-accessible surface distance on the [Jwalk] webserver (http://jwalk.ismb.lon.ac.uk/jwalk/)
+* csv export file - a plain csv file with crosslinks according to the residue numbering and Chain IDs of the pdb file.
+* Chimerax Pseudobonds file - for visualizing crosslinks in [UCSF ChimeraX ](https://www.rbvi.ucsf.edu/chimerax/).
+* Jwalk - for calculating solvent-accessible surface distance on the [Jwalk](http://jwalk.ismb.lon.ac.uk/jwalk/) webserver.
 
 There is one remaining button which sits by itself, "Download Image as PNG", which will download a PNG (bitmap format) file of the current state of the 3D view. A vector graphic format is not available for this view. The filename will include information on search id and current filter settings.
 
