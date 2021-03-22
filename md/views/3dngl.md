@@ -78,7 +78,7 @@ There is one remaining button which sits by itself, "Download Image as PNG", whi
 
 
 ### Using the exported files ###
-* Pymol Command File - Place the pymol command file (.pml) in the same folder as the .pdb file you are analysing. If you have downloaded coordinates using a pdb code, then this can be anywhere in your computer, as the command file will instruct pymol to download the coordinates again. Open pymol, and from within pymol, open the command file - this will load the structure and the links. Often, it is preferable to then type the command "set dash_gap, 0" and then "set dash_width, 5", to make the crosslinks solid and more visible
+* Pymol Command File - Place the pymol command file (.pml) in the same folder as the .pdb file you are analysing. If you have downloaded coordinates using a pdb code, then this can be anywhere in your computer, as the command file will instruct pymol to download the coordinates again. Open pymol, and from within pymol, open the command file - this will load the structure and the links. Often, it is preferable to then type the command "set dash\_gap, 0" and then "set dash\_width, 5", to make the crosslinks solid and more visible
 * Haddock Distance Restraints File - this file can be used as ambiguous restraints in HADDOCK to dock multiple proteins together. Currently, this only works if each pdb file loaded into NGL viewer is made of a single chain. To obtain tables to dock protein complexes, each pdb file has to be formatted as a single chain, with non-overlapping residue numbering. 
 * Chimerax pseudobond file - The file has to have the .pb extension. Open the structure in chimerax, then in the command line of the program type open filename.pb . The crosslinks will then be rendered on the structure.
 
