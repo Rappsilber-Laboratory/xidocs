@@ -73,6 +73,7 @@ Finally, the "Export" dropdown offers three options for exporting various parts 
 * csv export file - a plain csv file with crosslinks according to the residue numbering and Chain IDs of the pdb file.
 * Chimerax Pseudobonds file - for visualizing crosslinks in [UCSF ChimeraX ](https://www.rbvi.ucsf.edu/chimerax/).
 * Jwalk - for calculating solvent-accessible surface distance on the [Jwalk](http://jwalk.ismb.lon.ac.uk/jwalk/) webserver.
+* XlinkAnalyzer - produces a crosslink and a session file for visualization with the [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/) plugin XlinkAnalyzer(https://www.embl-hamburg.de/XlinkAnalyzer/XlinkAnalyzer.html) for visualizing crosslinks *and interactively moving* subunits with links displayed.
 
 There is one remaining button which sits by itself, "Download Image as PNG", which will download a PNG (bitmap format) file of the current state of the 3D view. A vector graphic format is not available for this view. The filename will include information on search id and current filter settings.
 
@@ -81,6 +82,7 @@ There is one remaining button which sits by itself, "Download Image as PNG", whi
 * Pymol Command File - Place the pymol command file (.pml) in the same folder as the .pdb file you are analysing. If you have downloaded coordinates using a pdb code, then this can be anywhere in your computer, as the command file will instruct pymol to download the coordinates again. Open pymol, and from within pymol, open the command file - this will load the structure and the links. Often, it is preferable to then type the command "set dash\_gap, 0" and then "set dash\_width, 5", to make the crosslinks solid and more visible
 * Haddock Distance Restraints File - this file can be used as ambiguous restraints in HADDOCK to dock multiple proteins together. Currently, this only works if each pdb file loaded into NGL viewer is made of a single chain. To obtain tables to dock protein complexes, each pdb file has to be formatted as a single chain, with non-overlapping residue numbering. 
 * Chimerax pseudobond file - The file has to have the .pb extension. Open the structure in chimerax, then in the command line of the program type open filename.pb . The crosslinks will then be rendered on the structure.
+* XlinkAnalyzer - save the .json file and the .csv file in the same directory. Open UCSF Chimera and the XlinkAnalyzer plugin (which has to be installed separately, and then is opened from tool->utilities->XlinkAnalyzer . Open the same protein you have uploaded to the Xi session in Chimera. In the plugin window, go to file-> load project. After a few seconds, it should load. Then go to "Xlinks", select the structure and click on "display all links". Crosslinks should appear. In the "Subunits" tab, individual subinits can be selected and activated for moving independently of the rest of a protein complex. Additionally, domains and regions to be moved independently can be defined in the "setup" tab. XlinkAnalyzer is powerful, for more details see their website.
 
 
 ### References ###
