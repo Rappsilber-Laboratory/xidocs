@@ -80,6 +80,7 @@
 <li>csv export file - a plain csv file with crosslinks according to the residue numbering and Chain IDs of the pdb file.</li>
 <li>Chimerax Pseudobonds file - for visualizing crosslinks in <a href="https://www.rbvi.ucsf.edu/chimerax/">UCSF ChimeraX </a>.</li>
 <li>Jwalk - for calculating solvent-accessible surface distance on the <a href="http://jwalk.ismb.lon.ac.uk/jwalk/">Jwalk</a> webserver.</li>
+<li>XlinkAnalyzer - produces a crosslink and a session file for visualization with the <a href="https://www.cgl.ucsf.edu/chimera/">UCSF Chimera</a> plugin XlinkAnalyzer(https://www.embl-hamburg.de/XlinkAnalyzer/XlinkAnalyzer.html) for visualizing crosslinks <em>and interactively moving</em> subunits with links displayed.</li>
 </ul>
 
 <p>There is one remaining button which sits by itself, "Download Image as PNG", which will download a PNG (bitmap format) file of the current state of the 3D view. A vector graphic format is not available for this view. The filename will include information on search id and current filter settings.</p>
@@ -90,6 +91,7 @@
 <li>Pymol Command File - Place the pymol command file (.pml) in the same folder as the .pdb file you are analysing. If you have downloaded coordinates using a pdb code, then this can be anywhere in your computer, as the command file will instruct pymol to download the coordinates again. Open pymol, and from within pymol, open the command file - this will load the structure and the links. Often, it is preferable to then type the command "set dash_gap, 0" and then "set dash_width, 5", to make the crosslinks solid and more visible</li>
 <li>Haddock Distance Restraints File - this file can be used as ambiguous restraints in HADDOCK to dock multiple proteins together. Currently, this only works if each pdb file loaded into NGL viewer is made of a single chain. To obtain tables to dock protein complexes, each pdb file has to be formatted as a single chain, with non-overlapping residue numbering. </li>
 <li>Chimerax pseudobond file - The file has to have the .pb extension. Open the structure in chimerax, then in the command line of the program type open filename.pb . The crosslinks will then be rendered on the structure.</li>
+<li>XlinkAnalyzer - save the .json file and the .csv file in the same directory. Open UCSF Chimera and the XlinkAnalyzer plugin (which has to be installed separately, and then is opened from tool->utilities->XlinkAnalyzer . Open the same protein you have uploaded to the Xi session in Chimera. In the plugin window, go to file-> load project. After a few seconds, it should load. Then go to "Xlinks", select the structure and click on "display all links". Crosslinks should appear. In the "Subunits" tab, individual subinits can be selected and activated for moving independently of the rest of a protein complex. Additionally, domains and regions to be moved independently can be defined in the "setup" tab. XlinkAnalyzer is powerful, for more details see their website.</li>
 </ul>
 
 <h3>References</h3>
@@ -97,4 +99,9 @@
 <ul>
 <li>AS Rose, AR Bradley, Y Valasatava, JM Duarte, A Prlić and PW Rose. <em>NGL viewer: web-based molecular graphics for large complexes.</em> Bioinformatics: bty419, 2018. <a href="http://dx.doi.org/10.1093/bioinformatics/bty419">doi:10.1093/bioinformatics/bty419</a></li>
 <li>AS Rose and PW Hildebrand. <em>NGL Viewer: a web application for molecular visualization.</em> Nucl Acids Res (1 July 2015) 43 (W1): W576-W579 first published online April 29, 2015. <a href="https://doi.org/10.1093/nar/gkv402">doi:10.1093/nar/gkv402</a></li>
+<li>Kosinski, J., et al. Xlink Analyzer: Software for analysis and visualization of cross-linking data in the context of three-dimensional structures. J. Struct. Biol. (2015) http://dx.doi.org/10.1016/j.jsb.2015.01.014</li>
+<li>UCSF Chimera--a visualization system for exploratory research and analysis. Pettersen EF, Goddard TD, Huang CC, Couch GS, Greenblatt DM, Meng EC, Ferrin TE. J Comput Chem. 2004 Oct;25(13):1605-12. </li>
+<li>UCSF ChimeraX: Structure visualization for researchers, educators, and developers. Pettersen EF, Goddard TD, Huang CC, Meng EC, Couch GS, Croll TI, Morris JH, Ferrin TE. Protein Sci. 2021 Jan;30(1):70-82. </li>
+<li>The Importance of Non-accessible Crosslinks and Solvent Accessible Surface Distance in Modeling Proteins with Restraints From Crosslinking Mass Spectrometry.
+J Bullock, J Schwab, K Thalassinos, M Topf. Mol Cell Proteomics. 15, 2491–2500, 2016 </li>
 </ul>
