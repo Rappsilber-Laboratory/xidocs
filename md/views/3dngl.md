@@ -30,7 +30,7 @@ Pressing certain keys also performs operations on the view:
 
 A more in-depth manual for NGL is available here --> [NGL Manual](http://nglviewer.org/ngl/api/manual/index.html "http://nglviewer.org/ngl/api/manual/index.html")
 
-Like the other views in Xi View, individual cross-links can be highlighted by moving the mouse pointer over them (plus a tooltip supplies details on the particular cross-link). Similarly, cross-links can be selected by using the left mouse button. In conjunction with the CTRL key, multiple cross-links can be selected (by clicking on unselected links) and currently selected cross-links can be unselected.
+Like the other views in xiVIEW, individual cross-links can be highlighted by moving the mouse pointer over them (plus a tooltip supplies details on the particular cross-link). Similarly, cross-links can be selected by using the left mouse button. In conjunction with the CTRL key, multiple cross-links can be selected (by clicking on unselected links) and currently selected cross-links can be unselected.
 
 Clicking with the left mouse button on the background of the view will clear all selections.
 

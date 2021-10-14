@@ -14,7 +14,7 @@ Moving the mouse pointer across the scatterplot displays details in a tooltip fo
 
 ### Options ###
 
-The main controls for this view are the two "Plot this Data Along (X/Y)Axis" dropdowns which choose the metadata attribute to be distributed in the scatterplot - one for each axis. Like the histogram, the availability of these attributes fundamentally depends on the contents of the loaded search data though additional metadata can be added using the Load > Cross-Link Metadata dialog available through Xi View's top menu bar. If a PDB file has been loaded, then the Cross-Link Distances are available to plot as one of the options.
+The main controls for this view are the two "Plot this Data Along (X/Y)Axis" dropdowns which choose the metadata attribute to be distributed in the scatterplot - one for each axis. Like the histogram, the availability of these attributes fundamentally depends on the contents of the loaded search data though additional metadata can be added using the Load > Cross-Link Metadata dialog available through xiVIEW's top menu bar. If a PDB file has been loaded, then the Cross-Link Distances are available to plot as one of the options.
 
 The "Add Jitter" toggle option decides whether to displace each square a small distance from its calculated position. This is useful for attributes with a small number of discrete values (e.g. Charge) where many representations would be overlaid at the same point. Turning jitter on gives a truer visual representation of the data density / distribution for these attributes.
 

@@ -1,6 +1,6 @@
 ## Import Cross-Links from a CSV file ##
 
-The CSV File Chooser dialog will ask for up to two files that are needed to load additional cross-links into Xi View. The first file, of CSV format, requires data under fixed column names (though the columns themselves don't need to be fixed in order).
+The CSV File Chooser dialog will ask for up to two files that are needed to load additional cross-links into xiVIEW. The first file, of CSV format, requires data under fixed column names (though the columns themselves don't need to be fixed in order).
 
 Compulsory columns are:
 

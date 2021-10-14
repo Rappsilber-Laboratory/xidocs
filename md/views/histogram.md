@@ -16,7 +16,7 @@ The series legend at the bottom of the chart can also be used to turn on or off 
 
 ### Options ###
 
-The main control for this view is the "Plot this Data Along Axis" dropdown which chooses the metadata attribute to be distributed in the histogram. The availability of these attributes fundamentally depends on the contents of the loaded search data though additional metadata can be added using the Load > Cross-Link Metadata dialog available through Xi View's top menu bar.
+The main control for this view is the "Plot this Data Along Axis" dropdown which chooses the metadata attribute to be distributed in the histogram. The availability of these attributes fundamentally depends on the contents of the loaded search data though additional metadata can be added using the Load > Cross-Link Metadata dialog available through xiVIEW's top menu bar.
 
 If a PDB file has been loaded, then the Cross-Link Distances are available to plot as one of the options. With this attribute a sample distribution of potential distances from the PDB is also plotted (as the "Random" series in the chart) to show users whether their cross-link distances are differentiable from background noise. Also, a further dropdown becomes available, "Random Scope", which allows a user to select the range from which these sample distances are taken - from anywhere within the full PDB, from only within copies of the same proteins in the PDB, or only from within only the same chains in the PDB. This option can produce large changes in the sample distribution - with samples taken only from within the same chains typically having much smaller average distances. If crosslinker specificities are available then the random distances are chosen only between cross-linkable residues.
 

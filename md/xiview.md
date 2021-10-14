@@ -1,6 +1,6 @@
-## Xi View ##
+## xiVIEW ##
 
-Xi View contains many different ways to view cross-link data, from circle plots, protein network views, protein sequence views and tables, to raw spectra and peak views. Data can be filtered and exported, as can images. PDB datasets can be incorporated to give physical context to the cross-links, enabling 3D and contact map views, with automatic alignment performed between Xi and PDB sequences.
+xiVIEW contains many different ways to view cross-link data, from circle plots, protein network views, protein sequence views and tables, to raw spectra and peak views. Data can be filtered and exported, as can images. PDB datasets can be incorporated to give physical context to the cross-links, enabling 3D and contact map views, with automatic alignment performed between Xi and PDB sequences.
 
 This documentation is divided into four logical sections:
 
@@ -25,7 +25,7 @@ The dataset loaded from the history page can be augmented with the addition of m
 1. 	[User Annotations](./import/userannotations.html "User Annotations") - Add annotation ranges and types for the proteins in the search if the Uniprot annotations are not sufficient or have not been picked up.
 
 ### 3. Viewing Data ###
-There are a number of different views available for exploring cross-links within Xi View. One, the XiNet view, is a constant in the main window of xiView. The others are available via the "View" drop-down menu in the menu bar along the top of the window.
+There are a number of different views available for exploring cross-links within xiVIEW. One, the XiNet view, is a constant in the main window of xiView. The others are available via the "View" drop-down menu in the menu bar along the top of the window.
 
 The views themselves can be categorised as three basic types:
 
@@ -44,7 +44,7 @@ The views themselves can be categorised as three basic types:
 	1. [Alignment View](./views/alignment.html "Alignment View")
 	2. [Search Summaries](./views/searchSummaries.html "Search Summaries")
 
-The [Legend View](./views/legend.html "Legend View") can be considered in a category of its own, its main function is to choose and refine a colour scheme used in the rest of the Xi View interface.
+The [Legend View](./views/legend.html "Legend View") can be considered in a category of its own, its main function is to choose and refine a colour scheme used in the rest of the xiVIEW interface.
 
 All views also share a number of [common operations and functionalities](./views/shared.html "Shared View Operations") such as filtering and selection.
 
