@@ -19,7 +19,7 @@ One of the main benefits of XiView is the ability to filter the dataset based on
 The dataset loaded from the history page can be augmented with the addition of metadata for the cross-links and proteins. This can be performed via the 'Load' menu in the top menu bar which offers five different methods for incorporating metadata:
 
 1. 	[PDB Data](./import/pdbdata.html "PDB Data") - Load PDB data to display crystal structures and to calculate distances.
-1. 	[Cross-Links (CSV)](./import/crosslinks.html "Cross-Links") - Add additional cross-links to the ones already present.
+1. 	STRING
 1. 	[Cross-Link Metadata](./import/crossmeta.html "Cross-Link Metadata") - Add metadata to the existing cross-links.
 1. 	[Protein Metadata](./import/proteinmeta.html "Protein Metadata") - Add metadata to the existing proteins.
 1. 	[User Annotations](./import/userannotations.html "User Annotations") - Add annotation ranges and types for the proteins in the search if the Uniprot annotations are not sufficient or have not been picked up.
